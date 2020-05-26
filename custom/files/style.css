@@ -1,0 +1,143 @@
+#content {
+    max-width: 500px;
+    width: 85%;
+    margin: auto;
+}
+
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+}
+
+html {
+    background-color: #282a36;
+}
+
+body {
+    color: #f8f8f2;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+pre {
+    font-size: 15px;
+    font-weight: 550;
+}
+
+code {
+    font-weight: 550;
+}
+
+table {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 30pt;
+    margin-bottom: 6pt;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    color: #caa9fa;
+}
+
+h2 {
+    color: #50fa7b;
+}
+
+h1 {
+    margin-top: 15pt !important;
+    color: #ff79c6;
+    font-size-adjust: 0.45;
+}
+
+pre.example {
+    margin: 20px 20px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #8be9fd;
+}
+
+th.org-left {
+    text-align: left;
+}
+
+.theorem {
+    display: block;
+    margin: 16px 20px;
+    font-style: italic;
+}
+
+.theorem p {
+    margin: 0px;
+}
+
+.theorem:before {
+    content: "Theorem.";
+    font-weight: bold;
+    font-style: normal;
+    color: #caa9fa;
+}
+
+.lemma {
+    display: block;
+    margin: 16px 20px;
+    font-style: italic;
+}
+
+.lemma:before {
+    content: "Lemma.";
+    font-weight: bold;
+    font-style: normal;
+    color: #caa9fa;
+}
+
+.lemma p {
+    margin: 0px;
+}
+
+.proof {
+    display: block;
+    margin: 16px 20px 36px 20px;
+    font-style: normal;
+}
+
+.proof:before {
+    content: "Proof.";
+    font-style: italic;
+    color: #caa9fa;
+}
+
+.proof:after {
+    content: "\25FC";
+    float:right;
+    color: #caa9fa;
+}
+
+.proof p {
+    margin: 0px;
+}
+
+.definition {
+    display: block;
+    margin: 16px 20px;
+    font-style: normal;
+}
+
+.definition:before {
+    content: "Definition.";
+    font-weight: bold;
+    font-style: normal;
+    color: #caa9fa;
+}
+
+.definition p {
+    margin: 0px;
+}
