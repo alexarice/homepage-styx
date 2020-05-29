@@ -23,12 +23,16 @@ body {
 }
 
 pre {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 550;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #373a59;
 }
 
 code {
     font-weight: 550;
+    color: #f1fa8c;
 }
 
 table {
@@ -58,6 +62,16 @@ h1 {
 
 pre.example {
     margin: 20px 20px;
+}
+
+details {
+    color: #ff79c6;
+}
+
+details[open=""] {
+    border: 1px solid #6272A4;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 a:link, a:visited {
