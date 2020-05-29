@@ -11,7 +11,7 @@ mkDerivation {
   outputs = [ "out" "html" ];
 
   buildPhase = ''
-    agda --html --html-highlight=auto *.md
+    agda --html --html-highlight=auto *.md --css /css/Agda.css
   '';
 
   installPhase = ''

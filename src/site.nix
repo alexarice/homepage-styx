@@ -8,7 +8,15 @@
 , extraConf ? {}
 }:
 
-rec {
+let
+  strict-group-theory = agdaPackages.callPackage ./agda/strict-group-theory.nix {
+    groups = agdaPackages.callPackage ./agda/packages/groups.nix { };
+  };
+  strict-group-theory-uf = agdaPackages.callPackage ./agda/strict-group-theory-uf.nix {
+    groups-uf = agdaPackages.callPackage ./agda/packages/groups-uf.nix { };
+    cssFile = ./static/posts/Agda.css;
+  };
+in rec {
 
   /* Importing styx library
   */
@@ -37,11 +45,14 @@ rec {
 
   data = {
     homepage = lib.loadFile { file = ./index.md; inherit env; };
-    strict-group-theory = agdaPackages.callPackage ./agda/strict-group-theory.nix {
-      groups = agdaPackages.callPackage ./agda/packages/groups.nix { };
-    };
+
     strict-group-theory-post = lib.loadFile {
-      file = "${data.strict-group-theory}/strict-group-theory.md";
+      file = "${strict-group-theory}/strict-group-theory.md";
+      inherit env;
+    };
+    strict-group-theory-uf-post = lib.loadDir {
+      dir = "${strict-group-theory-uf}";
+      asAttrs = true;
       inherit env;
     };
   };
@@ -62,12 +73,19 @@ rec {
     } // data.strict-group-theory-post;
   };
 
+  agdaToPages = basePath: pages: map (x: x // { path = "${basePath}/${x.fileData.basename}.html"; }) (lib.pagesToList {
+    inherit pages;
+    default.template = templates.agdaPostLayout;
+    default.layout = templates.layout;
+  });
+
+  strict-group-theory-uf-pages = agdaToPages "/posts/sgtuf" data.strict-group-theory-uf-post;
 
   /* Converting the pages attribute set to a list
   */
-  pageList = lib.pagesToList { inherit pages; };
+  pageList = lib.pagesToList { inherit pages; } ++ strict-group-theory-uf-pages;
 
-  fileList = files ++ [ ./static (data.strict-group-theory.html) ];
+  fileList = files ++ [ ./static (strict-group-theory.html) (strict-group-theory-uf.html) ];
 
   /* Generating the site
   */

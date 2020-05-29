@@ -1,0 +1,3 @@
+name: strict-group-theory-uf
+depend: cubical groups-uf
+include: .

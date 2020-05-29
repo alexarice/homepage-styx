@@ -48,3 +48,4 @@ I have attended the following events:
 
 ## Posts
 - [Strictly Associative Group Theory](posts/strict-group-theory.html) - 26/03/2020
+- [Strictly Associative Group Theory with Univalence](posts/sgtuf/Strict-Group-Theory-UF.html) - 29/05/2020
