@@ -8,7 +8,7 @@ body .Agda {
 .Agda a.Markup        { color: #6272a4 }
 .Agda a.Keyword       { color: #ff79c6 }
 .Agda a.String        { color: #f1fa8c }
-.Agda a.Number        { color: #ff5555 }
+.Agda a.Number        { color: #f8f8f2 }
 .Agda a.Symbol        { color: #f8f8f2 }
 .Agda a.PrimitiveType { color: #bd93f9 }
 .Agda a.Pragma        { color: #ff79c6 }
