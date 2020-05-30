@@ -1,0 +1,50 @@
+@import "colours";
+
+body .Agda {
+    color: $green;
+}
+
+/* Aspects. */
+.Agda a.Comment       { color: $comment; }
+.Agda a.Background    {}
+.Agda a.Markup        { color: $comment; }
+.Agda a.Keyword       { color: $pink; }
+.Agda a.String        { color: $yellow; }
+.Agda a.Number        { color: $foreground; }
+.Agda a.Symbol        { color: $foreground; }
+.Agda a.PrimitiveType { color: $purple; }
+.Agda a.Pragma        { color: $pink; }
+.Agda a.Operator      {}
+
+/* NameKinds. */
+.Agda a.Bound                  { color: $foreground; }
+.Agda a.Generalizable          { color: $green; }
+.Agda a.InductiveConstructor   { color: $purple; }
+.Agda a.CoinductiveConstructor { color: $purple; }
+.Agda a.Datatype               { color: $purple; }
+.Agda a.Field                  { color: $purple; }
+.Agda a.Function               { color: $green; }
+.Agda a.Module                 { color: $foreground; }
+.Agda a.Postulate              { color: $purple; }
+.Agda a.Primitive              { color: $purple; }
+.Agda a.Record                 { color: $purple; }
+
+/* OtherAspects. */
+.Agda a.DottedPattern        {}
+.Agda a.UnsolvedMeta         { color: $foreground; background: $yellow   }
+.Agda a.UnsolvedConstraint   { color: $foreground; background: $yellow   }
+.Agda a.TerminationProblem   { color: $foreground; background: #FFA07A   }
+.Agda a.IncompletePattern    { color: $foreground; background: #F5DEB3   }
+.Agda a.Error                { color: $red;   text-decoration: underline }
+.Agda a.TypeChecks           { color: $foreground; background: #ADD8E6   }
+.Agda a.Deadcode             { color: $foreground; background: #808080   }
+.Agda a.ShadowingInTelescope { color: $foreground; background: #808080   }
+
+/* Standard attributes. */
+.Agda a { text-decoration: none }
+/* .Agda a[href]:hover { background-color: #B4EEB4 } */
+/* .Agda [href].hover-highlight { background-color: #B4EEB4; } */
+
+html {
+    background-color: $background;
+}

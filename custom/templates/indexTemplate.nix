@@ -1,2 +1,2 @@
 { templates, lib, ... }:
-templates.page [ { href = "style.css"; } ]
+templates.page [ { href = "/css/style.css"; } ]

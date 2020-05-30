@@ -1,3 +1,5 @@
+@import "colours";
+
 #content {
     max-width: 500px;
     width: 85%;
@@ -12,11 +14,11 @@
 }
 
 html {
-    background-color: #282a36;
+    background-color: $background;
 }
 
 body {
-    color: #f8f8f2;
+    color: $foreground;
     font-family: 'Source Code Pro', monospace;
     line-height: 1.2;
     font-size: 14px;
@@ -27,12 +29,12 @@ pre {
     font-weight: 550;
     padding: 10px;
     border-radius: 10px;
-    background-color: #373a59;
+    background-color: $selection;
 }
 
 code {
     font-weight: 550;
-    color: #f1fa8c;
+    color: $yellow;
 }
 
 table {
@@ -47,16 +49,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-    color: #caa9fa;
+    color: $purple;
 }
 
 h2 {
-    color: #50fa7b;
+    color: $green;
 }
 
 h1 {
     margin-top: 15pt !important;
-    color: #ff79c6;
+    color: $pink;
     font-size-adjust: 0.45;
 }
 
@@ -65,18 +67,18 @@ pre.example {
 }
 
 details {
-    color: #ff79c6;
+    color: $pink;
 }
 
 details[open=""] {
-    border: 1px solid #6272A4;
+    border: 1px solid $comment;
     border-radius: 10px;
     padding: 10px;
 }
 
 a:link, a:visited {
     text-decoration: none;
-    color: #8be9fd;
+    color: $cyan;
 }
 
 th.org-left {
@@ -97,7 +99,7 @@ th.org-left {
     content: "Theorem.";
     font-weight: bold;
     font-style: normal;
-    color: #caa9fa;
+    color: $purple;
 }
 
 .lemma {
@@ -110,7 +112,7 @@ th.org-left {
     content: "Lemma.";
     font-weight: bold;
     font-style: normal;
-    color: #caa9fa;
+    color: $purple;
 }
 
 .lemma p {
@@ -126,13 +128,13 @@ th.org-left {
 .proof:before {
     content: "Proof.";
     font-style: italic;
-    color: #caa9fa;
+    color: $purple;
 }
 
 .proof:after {
     content: "\25FC";
     float:right;
-    color: #caa9fa;
+    color: $purple;
 }
 
 .proof p {
@@ -149,7 +151,7 @@ th.org-left {
     content: "Definition.";
     font-weight: bold;
     font-style: normal;
-    color: #caa9fa;
+    color: $purple;
 }
 
 .definition p {
