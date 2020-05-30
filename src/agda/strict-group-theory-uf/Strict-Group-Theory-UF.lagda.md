@@ -1,3 +1,7 @@
+{---
+title = "Strictly Associative Group Theory using Univalence";
+---}
+
 <!--
 ```agda
 {-# OPTIONS --safe --cubical #-}
