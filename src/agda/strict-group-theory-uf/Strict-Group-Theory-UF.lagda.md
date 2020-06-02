@@ -32,6 +32,12 @@ and we define the representable subgroup of the Symmetric group and show it is i
 import Groups.Symmetric.Representable
 ```
 
+A reasoning module is made:
+
+```agda
+import Groups.Reasoning
+```
+
 and lastly the use of this is demonstrated.
 
 ```agda
