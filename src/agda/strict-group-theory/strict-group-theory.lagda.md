@@ -43,7 +43,7 @@ What we had above was a propositional equality between `(x ∙ y) ∙ z` and `x 
   gassoc x y z = assoc x y z
 ```
 
-when what we really want is for this to be a definitional equality, which would allow us to treat these as the same object. We say that we have /strict associativity/ exactly when this equation holds by definition. Luckily there is such a structure that has this property, namely function composition. Suppose we have functions `f g h : X → X`. Then we have
+when what we really want is for this to be a definitional equality, which would allow us to treat these as the same object. We say that we have _strict associativity_ exactly when this equation holds by definition. Luckily there is such a structure that has this property, namely function composition. Suppose we have functions `f g h : X → X`. Then we have
 <!--
 ```agda
 module hidden where
@@ -171,7 +171,7 @@ We can also see that unitality has been taken care of. In the first line it has 
 ## Equality between functions
    The choice of equality between functions is crucial to making this syntax work. The complication is that we have said function composition is strictly associative but glossed over that we are working with permutations or invertible functions.
 
-   Above, the `∘` operator is not just composition of functions, but is composition of invertible functions, which joins the proofs that each component is invertible to get a proof that the whole composite is invertible. It turns out this is /not/ a strictly associative operation. However if we make sure we only compare the function components of the invertible functions, then strict associativity returns.
+   Above, the `∘` operator is not just composition of functions, but is composition of invertible functions, which joins the proofs that each component is invertible to get a proof that the whole composite is invertible. It turns out this is _not_ a strictly associative operation. However if we make sure we only compare the function components of the invertible functions, then strict associativity returns.
 
    This would lead us to the following definition of equality between invertible functions.
 
