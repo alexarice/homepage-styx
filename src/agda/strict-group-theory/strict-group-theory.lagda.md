@@ -76,7 +76,7 @@ Therefore we can work with functions without ever having to worry about associat
   sidentityʳ f = λ x → refl
 ```
 
-We say a structure has /strict units/ or is /strictly unital/ when this property holds.
+We say a structure has _strict units_ or is _strictly unital_ when this property holds.
 
 ### Cayley's Theorem
    Cayley's theorem gives us a translation from group operations to function composition. To understand what is says, we first need to introduce the notion of the symmetric group.
