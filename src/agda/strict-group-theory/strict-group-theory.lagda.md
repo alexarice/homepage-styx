@@ -29,7 +29,7 @@ Commonly, when one starts to learn group theory, they are given the axioms for a
 
 This works nicely for some small examples but as proofs get more complicated, a lot of the proof becomes moving brackets around and adding units, which can be considered boilerplate and obscures the interesting parts of the proof.
 
-Instead of tackling these problems in group theory, it is usual to sweep all of these problems under the rug, not write any brackets anywhere, and assume that all the associativity problems could be solved if needed. Luckily for group theorists, it is rarely necessary to worry about these details. Unfortunately if instead we are interested in formalising some group theory, in a proof assistant such as [[https://github.com/agda/agda][Agda]], then this all becomes very necessary, as the computer does not trust us that all the associativity problems are unnecessary.
+Instead of tackling these problems in group theory, it is usual to sweep all of these problems under the rug, not write any brackets anywhere, and assume that all the associativity problems could be solved if needed. Luckily for group theorists, it is rarely necessary to worry about these details. Unfortunately if instead we are interested in formalising some group theory, in a proof assistant such as [Agda](https://github.com/agda/agda), then this all becomes very necessary, as the computer does not trust us that all the associativity problems are unnecessary.
 
 In this post, a method in which this "bracketless group theory" can be written in a proof assistant is presented, and some of the difficulties with this are described.
 
