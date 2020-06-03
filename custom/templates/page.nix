@@ -12,5 +12,5 @@ let
 in
 page // {
   inherit content title;
-  extraCSS = lib.optionals (page ? extraCSS) page.extraCSS ++ extraCSS ++ [ { href = "https://fonts.googleapis.com/css?family=Source+Code+Pro"; } ];
+  extraCSS = lib.optionals (page ? extraCSS) page.extraCSS ++ extraCSS ++ [ { href = "https://fonts.googleapis.com/css?family=Source+Code+Pro:Regular,Semi-bold"; } ];
 }
