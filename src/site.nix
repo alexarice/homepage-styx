@@ -5,6 +5,8 @@
 -----------------------------------------------------------------------------*/
 { styx
 , agdaPackages
+, callPackage
+, fetchFromGitHub
 , extraConf ? {}
 }:
 
@@ -14,8 +16,9 @@ let
   };
   strict-group-theory-uf = agdaPackages.callPackage ./agda/strict-group-theory-uf.nix {
     groups-uf = agdaPackages.callPackage ./agda/packages/groups-uf.nix { };
-    cssFile = ./static/posts/Agda.css;
   };
+  inverses-agda = agdaPackages.callPackage ./agda/inverses.nix { };
+  inverses-pdf = callPackage (import ./tex/inverses.nix) { inherit inverses-agda; };
 in rec {
 
   /* Importing styx library
@@ -85,7 +88,7 @@ in rec {
   */
   pageList = lib.pagesToList { inherit pages; } ++ strict-group-theory-uf-pages;
 
-  fileList = files ++ [ ./static (strict-group-theory.html) (strict-group-theory-uf.html) ];
+  fileList = files ++ [ ./static (strict-group-theory.html) (strict-group-theory-uf.html) (inverses-agda) (inverses-pdf)];
 
   /* Generating the site
   */

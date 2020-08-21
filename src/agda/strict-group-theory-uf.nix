@@ -1,4 +1,4 @@
-{ mkDerivation , cubical, groups-uf, cssFile }:
+{ mkDerivation , cubical, groups-uf }:
 
 mkDerivation {
   pname = "strict-group-theory-uf-post";
