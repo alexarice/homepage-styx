@@ -2,13 +2,13 @@
 
 mkDerivation rec {
   pname = "inverses-agda";
-  version = "02fd0fd1f85b18a45a3ff91d5a096f572756e0ff";
+  version = "0.1";
 
   src = fetchFromGitHub {
     owner = "alexarice";
     repo = "Inverses";
-    rev = version;
-    sha256 = "1kzw4g27rw8v9kj6307v67lx92ry36kx09v7qask4xgi59qm7dbd";
+    rev = "arxiv-v${version}";
+    sha256 = "0p5r3gafaxwhq303hkns5sanvglkq0qcn7j1wc8ly2by2idzqbda";
     fetchSubmodules = true;
   };
 
