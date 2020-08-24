@@ -44,10 +44,10 @@ I have attended the following events:
 - MGS Christmas lectures in Sheffield 2019
 
 ## Publications
-- Coinductive invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses))
+- Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses))
 
 ## Talks
-- 19th March 2020: Birmingham theory group lab lunch - [Coinductive invertibility in Higher Categories](talks/inverses.pdf)
+- 19th March 2020: Birmingham theory group lab lunch - [Coinductive Invertibility in Higher Categories](talks/inverses.pdf)
 
 ## Posts
 - [Strictly Associative Group Theory](posts/strict-group-theory.html) - 26/03/2020
