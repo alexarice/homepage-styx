@@ -49,5 +49,5 @@ I have attended the following events:
 - 19th March 2020: Birmingham theory group lab lunch - [Coinductive Invertibility in Higher Categories](talks/inverses.pdf)
 
 ## Posts
-- [Strictly Associative Group Theory with Univalence](posts/sgtuf/Strict-Group-Theory-UF.html) - 29/05/2020
+- [Strictly Associative Group Theory using Univalence](posts/sgtuf/Strict-Group-Theory-UF.html) - 29/05/2020
 - [Strictly Associative Group Theory](posts/strict-group-theory.html) - 26/03/2020
