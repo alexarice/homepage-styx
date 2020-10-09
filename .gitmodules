@@ -1,0 +1,3 @@
+[submodule "src/public"]
+	path = src/public
+	url = https://github.com/alexarice/alexarice.github.io
