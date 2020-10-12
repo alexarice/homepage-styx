@@ -6,17 +6,16 @@ mkDerivation {
 
   buildInputs = [ cubical ];
 
-  src = ../../../../GroupsUF;
-
   installPhase = ''
     mkdir $out
     cp -r * $out
   '';
-  # src = fetchFromGitHub {
-  #   owner = "alexarice";
-  #   repo = "GroupsUF";
-  #   # Change this
-  #   rev = "master";
-  #   sha256 = "0000000000000000000000000000000000000000000000000000";
-  # };
+
+  src = fetchFromGitHub {
+    owner = "alexarice";
+    repo = "GroupsUF";
+    # Change this
+    rev = "master";
+    sha256 = "sha256-FCyxfNJTU83ZJaM8s04JszkRRcesualaLvaFnSx67AQ=";
+  };
 }

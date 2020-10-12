@@ -8,7 +8,7 @@ working under the supervision of [Jamie Vicary](https://www.cl.cam.ac.uk/~jv258/
 
 | - | - |
 Email          | aar53 at cam.ac.uk
-Office Address | Office ? <br> The Computer Laboratory <br> University of Cambridge <br> William Gates Building <br> Cambridge <br> CB3 0FD <br> United Kingdom
+Office Address | Office FS35 <br> The Computer Laboratory <br> University of Cambridge <br> William Gates Building <br> Cambridge <br> CB3 0FD <br> United Kingdom
 [Matrix](https://matrix.org)         | @alexarice:matrix.org
 GitHub         | [https://github.com/alexarice](https://github.com/alexarice)
 
