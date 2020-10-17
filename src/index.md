@@ -7,7 +7,7 @@ working under the supervision of [Jamie Vicary](https://www.cl.cam.ac.uk/~jv258/
 ## Contact
 
 | - | - |
-Email          | aar53 at cam.ac.uk
+Email          | alex.rice at cl.cam.ac.uk
 Office Address | Office FS35 <br> The Computer Laboratory <br> University of Cambridge <br> William Gates Building <br> Cambridge <br> CB3 0FD <br> United Kingdom
 [Matrix](https://matrix.org)         | @alexarice:matrix.org
 GitHub         | [https://github.com/alexarice](https://github.com/alexarice)
