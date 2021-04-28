@@ -6,7 +6,7 @@ mkDerivation {
 
   src = ./strict-group-theory;
 
-  buildInputs = [ groups standard-library ];
+  buildInputs = [ groups standard-library."1.3" ];
 
   outputs = [ "out" "html" ];
 

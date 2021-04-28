@@ -4,7 +4,7 @@ mkDerivation {
   pname = "groups";
   version = "master";
 
-  buildInputs = [ standard-library ];
+  buildInputs = [ standard-library."1.3" ];
 
   src = fetchFromGitHub {
     owner = "alexarice";

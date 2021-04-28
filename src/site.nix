@@ -8,6 +8,8 @@
 , callPackage
 , fetchFromGitHub
 , extraConf ? {}
+, styxLib
+, styx-themes
 }:
 
 let
@@ -19,17 +21,8 @@ let
   };
   inverses-agda = agdaPackages.callPackage ./agda/inverses.nix { };
   inverses-pdf = callPackage (import ./tex/inverses.nix) { inherit inverses-agda; };
+  linear-inf-pdf = callPackage (import ./tex/linear-inf.nix) { };
 in rec {
-
-  /* Importing styx library
-  */
-  styxLib = import styx.lib styx;
-
-
-  /* Importing styx themes from styx
-  */
-  styx-themes = import styx.themes;
-
 
   themes = [
     styx-themes.generic-templates
@@ -44,7 +37,7 @@ in rec {
     extraConf = [ ./conf.nix extraConf ];
   };
 
-  inherit (themesData) conf lib files templates env;
+  inherit (themesData) lib conf files templates env;
 
   data = {
     homepage = lib.loadFile { file = ./index.md; inherit env; };
@@ -88,7 +81,7 @@ in rec {
   */
   pageList = lib.pagesToList { inherit pages; } ++ strict-group-theory-uf-pages;
 
-  fileList = files ++ [ ./static (strict-group-theory.html) (strict-group-theory-uf.html) (inverses-agda) (inverses-pdf)];
+  fileList = files ++ [ ./static (strict-group-theory.html) (strict-group-theory-uf.html) (inverses-agda) (inverses-pdf) (linear-inf-pdf)];
 
   /* Generating the site
   */
