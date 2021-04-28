@@ -43,7 +43,7 @@ I have attended the following events:
 
 ## Publications
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
-- Temp ([pdf](pub/linear-inf.pdf))
+- New minimal linear inferences in Boolean logic independent of switch and medial ([pdf](pub/linear-inf.pdf))
 
 ## Talks
 - 25th September 2020: Birmingham theory group lab lunch - Biased composition in infinity categories

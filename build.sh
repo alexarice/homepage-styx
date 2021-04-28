@@ -6,6 +6,6 @@ if [ $? -ne 0 ]; then
     echo "Nix failed"
 fi
 
-rm -rf ./src/public/*
-cp -L -r $path/* ./src/public
-chmod u+rw -R ./src/public/*
+rm -r ./alexarice.github.io/*
+cp -L -r $path/* ./alexarice.github.io
+chmod u+rw -R ./alexarice.github.io/*
