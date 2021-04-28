@@ -3,7 +3,7 @@
 
   inputs = {
     all-agda.url = "github:alexarice/all-agda";
-    styx.url = "/home/alex/styx";
+    styx.url = "github:alexarice/styx/flakes";
   };
 
   outputs = { self, nixpkgs, all-agda, styx }: let
