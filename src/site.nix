@@ -10,6 +10,7 @@
 , extraConf ? {}
 , styxLib
 , styx-themes
+, pkgs
 }:
 
 let
@@ -22,6 +23,7 @@ let
   inverses-agda = agdaPackages.callPackage ./agda/inverses.nix { };
   inverses-pdf = callPackage (import ./tex/inverses.nix) { inherit inverses-agda; };
   linear-inf-pdf = callPackage (import ./tex/linear-inf.nix) { };
+  inherit (builtins) readFile;
 in rec {
 
   themes = [
