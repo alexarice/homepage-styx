@@ -50,9 +50,9 @@ I have attended the following events:
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
 
 ## Talks
-- June 2021: Categories and Companions Symposium - Biased composition in infinity categories ([Recording](https://www.youtube.com/watch?v=ngApRoAi7UY))
+- June 2021: Categories and Companions Symposium - Biased composition in infinity categories ([Recording](https://www.youtube.com/watch?v=ngApRoAi7UY), [Slides](talks/inf-category-equivs-talk.pdf)
 - 25th September 2020: Birmingham theory group lab lunch - Biased composition in infinity categories
-- 19th March 2020: Birmingham theory group lab lunch - [Coinductive Invertibility in Higher Categories](talks/inverses.pdf)
+- 19th March 2020: Birmingham theory group lab lunch - Coinductive Invertibility in Higher Categories ([slides](talks/inverses.pdf))
 
 ## Posts
 - [Linear inferences of size 7](https://prooftheory.blog/2020/10/01/linear-inferences-of-size-7/) - 09/10/2020
