@@ -32,20 +32,25 @@ distribution.
 ## Teaching
 - Teaching assistant for "Advanced Functional Programming" (Autumn 2019)
 - Teaching assistant for "Logic and Computation" (Spring 2019)
+- Supervisor for "Semantics of Programming Languages" (Autumn 2020)
+- Supervisor for "Prolog" (Spring 2020)
+- Supervisor for "Introduction to Probability" (Summer 2020)
 
 ## Events
 I have attended the following events:
 
+- Categories and Companions Symposium 2021
 - [SYCO 2](http://events.cs.bham.ac.uk/syco/2/)
 - [SYCO 3](http://events.cs.bham.ac.uk/syco/3/)
 - [SYCO 6](http://events.cs.bham.ac.uk/syco/6/)
 - MGS Christmas lectures in Sheffield 2019
 
 ## Publications
+- New minimal linear inferences in Boolean logic independent of switch and medial ([pdf](pub/linear-inf.pdf), [link](https://drops.dagstuhl.de/opus/volltexte/2021/14252/))
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
-- New minimal linear inferences in Boolean logic independent of switch and medial ([pdf](pub/linear-inf.pdf))
 
 ## Talks
+- June 2021: Categories and Companions Symposium - Biased composition in infinity categories ([Recording](https://www.youtube.com/watch?v=ngApRoAi7UY))
 - 25th September 2020: Birmingham theory group lab lunch - Biased composition in infinity categories
 - 19th March 2020: Birmingham theory group lab lunch - [Coinductive Invertibility in Higher Categories](talks/inverses.pdf)
 
