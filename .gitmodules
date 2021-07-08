@@ -1,6 +1,3 @@
 [submodule "alexarice.github.io"]
 	path = alexarice.github.io
 	url = git@github.com:alexarice/alexarice.github.io.git
-[submodule "src/tex/inf-category-equivs"]
-	path = src/tex/inf-category-equivs
-	url = git@github.com:alexarice/inf-category-equivs.git

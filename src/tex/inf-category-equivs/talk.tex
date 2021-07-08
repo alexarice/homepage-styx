@@ -1,0 +1,302 @@
+\documentclass[presentation]{beamer}
+
+\usetheme{Warsaw}
+\author{Alex Rice}
+
+\title{Biased whisker-based composition in higher categories}
+\date[CaCS 2021]{Categories and Companions Symposium, June 2021}
+
+\usepackage{quiver}
+\newcommand{\comp}{\star}
+
+\setbeamertemplate{page number in head/foot}[totalframenumber]
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+{
+  \setbeamertemplate{footline}{}
+  \setbeamertemplate{headline}{} %
+  \begin{frame}[noframenumbering]
+\maketitle
+\end{frame}}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Globular sets}
+
+\begin{frame}
+  \frametitle{What do we mean by a higher category?}
+  A regular (1-)category consists of objects and arrows.
+
+  In higher category theory we expand this to allow arrows of higher dimensions between lower dimensional arrows.
+
+  What should these higher dimensional arrows look like?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Globular Sets}
+  Globular sets are one natural shape of higher categories:
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \pause
+      \begin{block}
+        {Ordinary 1-categories}
+        % https://q.uiver.app/?q=WzAsMixbMCwxLCJDXzAiXSxbMCwwLCJDXzEiXSxbMSwwLCJzIiwyLHsib2Zmc2V0IjoyfV0sWzEsMCwidCIsMCx7Im9mZnNldCI6LTJ9XV0=
+        \[\begin{tikzcd}
+            {C_1} \\
+            {C_0}
+            \arrow["s"', shift right=2, from=1-1, to=2-1]
+            \arrow["t", shift left=2, from=1-1, to=2-1]
+          \end{tikzcd}\]
+      \end{block}
+    \end{column}
+    \pause
+    \begin{column}{0.5\textwidth}
+      \begin{block}
+        {Globular sets}
+        % https://q.uiver.app/?q=WzAsNCxbMCwzLCJHXzAiXSxbMCwyLCJHXzEiXSxbMCwxLCJHXzIiXSxbMCwwXSxbMSwwLCJzXzAiLDIseyJvZmZzZXQiOjJ9XSxbMSwwLCJ0XzAiLDAseyJvZmZzZXQiOi0yfV0sWzIsMSwic18xIiwyLHsib2Zmc2V0IjoyfV0sWzIsMSwidF8xIiwwLHsib2Zmc2V0IjotMn1dLFszLDIsIiIsMCx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV1d
+        \[\begin{tikzcd}
+            {} \\
+            {G_2} \\
+            {G_1} \\
+            {G_0}
+            \arrow["{s_0}"', shift right=2, from=3-1, to=4-1]
+            \arrow["{t_0}", shift left=2, from=3-1, to=4-1]
+            \arrow["{s_1}"', shift right=2, from=2-1, to=3-1]
+            \arrow["{t_1}", shift left=2, from=2-1, to=3-1]
+            \arrow[dotted, no head, from=1-1, to=2-1]
+          \end{tikzcd}\]
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Globular Sets}
+
+  Globular sets can be defined in a few different ways.
+
+  \pause{}
+
+  \begin{definition}
+    A \emph{globular set} \(\mathcal{G}\) consists of sets \(G_n\) for each \(n\) and maps \(s_n,t_n : G_{n+1} \to G_n\) for each \(n\) such that the following \emph{globularity conditions} hold:
+    \begin{align*}
+      s_n \circ s_{n+1} &= s_n \circ t_{n+1}\\
+      t_n \circ s_{n+1} &= t_n \circ t_{n+1}
+    \end{align*}
+  \end{definition}
+  \pause{}
+  We will write \(f : x \to y\) for an object \(f\) in \(G_{n+1}\) with \(s(f) = x\) and \(t(f) = y\).
+
+  \pause{}
+  Let the objects of the globular set be it's \(0\)-cells, morphisms between these be \(1\)-cells, \(\dots\)
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Examples}
+  \begin{itemize}
+  \item Ordinary 1-categories
+  \item 2-categories, 3-categories, \(\dots\)
+  \item Monoidal categories, braided monoidal categories, \(\dots\)
+  \item Martin L\"of Type Theory/non-Cubical Homotopy Type Theory
+  \end{itemize}
+\end{frame}
+
+\section{Composition in Globular sets}
+
+\begin{frame}
+  \frametitle{Unbiased vs Biased Composition}
+  Common definitions of categories have a biased composition.
+  \pause{}
+
+  Could we define a category with a ternary composition instead? Unary composition? Nullary composition?
+
+  \pause{}
+  \begin{block}{Unbiased vs Biased}
+    In an \emph{unbiased} definition, we allow every possible composition operation.
+
+    In a \emph{biased} definition, we only allow a subset of these operations.
+  \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Composition in infinity categories}
+  \begin{block}{Composition of 2 cells}
+    Composition along a 1-boundary:
+    \begin{tikzcd}
+      \bullet \arrow[r, bend right=90, ""{name=S1}] \arrow[r, ""{name=T1,below}, ""{name=S2}] \arrow[r, bend left=90, ""{name=T2, below}] & \bullet
+      \arrow[Rightarrow, "\alpha", from=S1, to=T1]
+      \arrow[Rightarrow, "\beta", from=S2, to=T2]
+    \end{tikzcd}
+    \pause{}
+
+    Codimension along a 0-boundary:
+    \begin{tikzcd}
+      \bullet \arrow[r, bend right=49, ""{name=S1}] \arrow[r, bend left=49, ""{name=T1, below}] & \bullet \arrow[r, bend right=49, ""{name=S2}] \arrow[r, bend left=49, ""{name=T2, below}] & \bullet
+      \arrow[Rightarrow, "\alpha", from=S1, to=T1]
+      \arrow[Rightarrow, "\beta", from=S2, to=T2]
+    \end{tikzcd}
+  \end{block}
+\end{frame}
+\begin{frame}[fragile]
+  \frametitle{Higher compositions and pasting diagrams}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{exampleblock}{3-cell composition}
+        % https://q.uiver.app/?q=WzAsMixbMiwwLCJcXGJ1bGxldCJdLFswLDAsIlxcYnVsbGV0Il0sWzEsMCwiIiwwLHsiY3VydmUiOjR9XSxbMSwwLCIiLDIseyJjdXJ2ZSI6LTR9XSxbMiwzLCIiLDAseyJvZmZzZXQiOi01LCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV0sWzIsMywiIiwyLHsib2Zmc2V0Ijo1LCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV0sWzIsMywiIiwxLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFs0LDYsIiIsMCx7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XSxbNiw1LCIiLDAseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV1d
+\[\begin{tikzcd}
+	\bullet && \bullet
+	\arrow[""{name=0, anchor=center, inner sep=0}, curve={height=24pt}, from=1-1, to=1-3]
+	\arrow[""{name=1, anchor=center, inner sep=0}, curve={height=-24pt}, from=1-1, to=1-3]
+	\arrow[""{name=2, anchor=center, inner sep=0}, shift left=5, shorten <=6pt, shorten >=6pt, Rightarrow, from=0, to=1]
+	\arrow[""{name=3, anchor=center, inner sep=0}, shift right=5, shorten <=6pt, shorten >=6pt, Rightarrow, from=0, to=1]
+	\arrow[""{name=4, anchor=center, inner sep=0}, shorten <=6pt, shorten >=6pt, Rightarrow, from=0, to=1]
+	\arrow[shorten <=2pt, shorten >=2pt, from=2, to=4]
+	\arrow[shorten <=2pt, shorten >=2pt, from=4, to=3]
+\end{tikzcd}\]
+% https://q.uiver.app/?q=WzAsMixbMCwwLCJcXGJ1bGxldCJdLFsyLDAsIlxcYnVsbGV0Il0sWzAsMSwiIiwwLHsiY3VydmUiOi01fV0sWzAsMSwiIiwyLHsiY3VydmUiOjV9XSxbMCwxXSxbNCwyLCIiLDEseyJvZmZzZXQiOi00LCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV0sWzQsMiwiIiwxLHsib2Zmc2V0Ijo0LCJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV0sWzMsNCwiIiwxLHsib2Zmc2V0IjotNCwic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFszLDQsIiIsMSx7Im9mZnNldCI6NCwic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFs1LDYsIiIsMSx7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XSxbNyw4LCIiLDEseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV1d
+\[\begin{tikzcd}
+	\bullet && \bullet
+	\arrow[""{name=0, anchor=center, inner sep=0}, curve={height=-30pt}, from=1-1, to=1-3]
+	\arrow[""{name=1, anchor=center, inner sep=0}, curve={height=30pt}, from=1-1, to=1-3]
+	\arrow[""{name=2, anchor=center, inner sep=0}, from=1-1, to=1-3]
+	\arrow[""{name=3, anchor=center, inner sep=0}, shift left=4, shorten <=4pt, shorten >=4pt, Rightarrow, from=2, to=0]
+	\arrow[""{name=4, anchor=center, inner sep=0}, shift right=4, shorten <=4pt, shorten >=4pt, Rightarrow, from=2, to=0]
+	\arrow[""{name=5, anchor=center, inner sep=0}, shift left=4, shorten <=4pt, shorten >=4pt, Rightarrow, from=1, to=2]
+	\arrow[""{name=6, anchor=center, inner sep=0}, shift right=4, shorten <=4pt, shorten >=4pt, Rightarrow, from=1, to=2]
+	\arrow[shorten <=3pt, shorten >=3pt, from=3, to=4]
+	\arrow[shorten <=3pt, shorten >=3pt, from=5, to=6]
+      \end{tikzcd}\]
+    % https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXGJ1bGxldCJdLFsxLDAsIlxcYnVsbGV0Il0sWzIsMCwiXFxidWxsZXQiXSxbMCwxLCIiLDAseyJjdXJ2ZSI6LTJ9XSxbMCwxLCIiLDIseyJjdXJ2ZSI6Mn1dLFsxLDIsIiIsMix7ImN1cnZlIjotMn1dLFsxLDIsIiIsMix7ImN1cnZlIjoyfV0sWzQsMywiIiwyLHsib2Zmc2V0IjotMywic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFs0LDMsIiIsMCx7Im9mZnNldCI6Mywic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFs2LDUsIiIsMix7Im9mZnNldCI6LTMsInNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XSxbNiw1LCIiLDAseyJvZmZzZXQiOjMsInNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XSxbNyw4LCIiLDIseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV0sWzksMTAsIiIsMix7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XV0=
+\[\begin{tikzcd}
+	\bullet & \bullet & \bullet
+	\arrow[""{name=0, anchor=center, inner sep=0}, curve={height=-12pt}, from=1-1, to=1-2]
+	\arrow[""{name=1, anchor=center, inner sep=0}, curve={height=12pt}, from=1-1, to=1-2]
+	\arrow[""{name=2, anchor=center, inner sep=0}, curve={height=-12pt}, from=1-2, to=1-3]
+	\arrow[""{name=3, anchor=center, inner sep=0}, curve={height=12pt}, from=1-2, to=1-3]
+	\arrow[""{name=4, anchor=center, inner sep=0}, shift left=3, shorten <=3pt, shorten >=3pt, Rightarrow, from=1, to=0]
+	\arrow[""{name=5, anchor=center, inner sep=0}, shift right=3, shorten <=3pt, shorten >=3pt, Rightarrow, from=1, to=0]
+	\arrow[""{name=6, anchor=center, inner sep=0}, shift left=3, shorten <=3pt, shorten >=3pt, Rightarrow, from=3, to=2]
+	\arrow[""{name=7, anchor=center, inner sep=0}, shift right=3, shorten <=3pt, shorten >=3pt, Rightarrow, from=3, to=2]
+	\arrow[shorten <=2pt, shorten >=2pt, from=4, to=5]
+	\arrow[shorten <=2pt, shorten >=2pt, from=6, to=7]
+\end{tikzcd}\]
+\end{exampleblock}
+
+\end{column}
+\begin{column}{0.5\textwidth}
+  \begin{exampleblock}{}
+    % https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXGJ1bGxldCJdLFsxLDAsIlxcYnVsbGV0Il0sWzIsMCwiXFxidWxsZXQiXSxbMCwxLCJmIl0sWzEsMiwiIiwwLHsiY3VydmUiOi0yfV0sWzEsMiwiIiwwLHsiY3VydmUiOjJ9XSxbNSw0LCJcXGFscGhhIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==
+\[\begin{tikzcd}
+	\bullet & \bullet & \bullet
+	\arrow["f", from=1-1, to=1-2]
+	\arrow[""{name=0, anchor=center, inner sep=0}, curve={height=-12pt}, from=1-2, to=1-3]
+	\arrow[""{name=1, anchor=center, inner sep=0}, curve={height=12pt}, from=1-2, to=1-3]
+	\arrow["\alpha", shorten <=3pt, shorten >=3pt, Rightarrow, from=1, to=0]
+      \end{tikzcd}\]
+    % https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXGJ1bGxldCJdLFsxLDAsIlxcYnVsbGV0Il0sWzMsMCwiXFxidWxsZXQiXSxbMCwxLCIiLDIseyJjdXJ2ZSI6Mn1dLFswLDEsIiIsMCx7ImN1cnZlIjotMn1dLFsxLDIsIiIsMix7ImN1cnZlIjotNX1dLFsxLDIsIiIsMix7ImN1cnZlIjo1fV0sWzEsMiwiIiwyLHsiY3VydmUiOi0zfV0sWzEsMiwiIiwyLHsiY3VydmUiOjN9XSxbMyw0LCIiLDIseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV0sWzgsNywiIiwyLHsib2Zmc2V0IjotNSwic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFs4LDcsIiIsMCx7Im9mZnNldCI6NSwic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dLFs3LDUsIiIsMix7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH19XSxbNiw4LCIiLDIseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV0sWzEwLDExLCIiLDIseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV1d
+\[\begin{tikzcd}
+	\bullet & \bullet && \bullet
+	\arrow[""{name=0, anchor=center, inner sep=0}, curve={height=12pt}, from=1-1, to=1-2]
+	\arrow[""{name=1, anchor=center, inner sep=0}, curve={height=-12pt}, from=1-1, to=1-2]
+	\arrow[""{name=2, anchor=center, inner sep=0}, curve={height=-40pt}, from=1-2, to=1-4]
+	\arrow[""{name=3, anchor=center, inner sep=0}, curve={height=40pt}, from=1-2, to=1-4]
+	\arrow[""{name=4, anchor=center, inner sep=0}, curve={height=-18pt}, from=1-2, to=1-4]
+	\arrow[""{name=5, anchor=center, inner sep=0}, curve={height=18pt}, from=1-2, to=1-4]
+	\arrow[shorten <=3pt, shorten >=3pt, Rightarrow, from=0, to=1]
+	\arrow[""{name=6, anchor=center, inner sep=0}, shift left=5, shorten <=5pt, shorten >=5pt, Rightarrow, from=5, to=4]
+	\arrow[""{name=7, anchor=center, inner sep=0}, shift right=5, shorten <=5pt, shorten >=5pt, Rightarrow, from=5, to=4]
+	\arrow[shorten <=2pt, shorten >=2pt, Rightarrow, from=4, to=2]
+	\arrow[shorten <=2pt, shorten >=2pt, Rightarrow, from=3, to=5]
+	\arrow[shorten <=4pt, shorten >=4pt, from=6, to=7]
+\end{tikzcd}\]
+  \end{exampleblock}
+\end{column}
+  \end{columns}
+  \end{frame}
+
+\section{Whisker-based composition}
+
+\begin{frame}
+  \frametitle{Stable Compositions}
+  \begin{definition}
+    A \emph{Stable} binary composition is a composition of an \(n\)-cell \(a\) and an \(m\)-cell \(b\) along their \((\min(n,m)- 1)\)-boundary. We write this composition \(a \cdot_{k} b\) where \(k\) is the boundary dimension.
+  \end{definition}
+  \vspace{50em}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Whisker-based composition scheme}
+  \begin{block}{Claim}
+    A definition of \(\infty\)-categories which only allows stable compositions is valid and equivalent to a fully unbiased definition.
+  \end{block}
+  \pause{}
+  \begin{theorem}
+    Every pasting diagram can be realised as a tree of stable binary composites. Furthermore this realisation respects source and target maps.
+  \end{theorem}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Inductive Characterisation of Pasting Diagrams}
+
+  Pasting diagrams ``with a focus'' are uniquely generated by the following rules.
+  \begin{itemize}
+  \item The singleton pasting diagram \(x\), is a pasting diagram with focus \(x\).
+  \item If \(\Gamma\) is a pasting diagram with focus \(x\), then \(\Gamma, y, f : x \to y\) is a pasting diagram with focus \(f\).
+  \item If \(\Gamma\) is a pasting diagram with focus \(f : x \to y\), then it is also a pasting diagram with focus \(y\).
+  \end{itemize}
+  A pasting diagram is a pasting diagram with a 0-dimensional focus.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Proof Sketch}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{definition}
+        If \(a\) is a cell and \(x\) is a variable, the \emph{principle replacement} \(a\langle x \rangle\) is given recursively by:
+        \begin{itemize}
+        \item If \(a = b \cdot c\) then \(a \langle x \rangle = b \cdot (c\langle x \rangle)\).
+        \item If \(a\) is a variable then \(a\langle x \rangle = x\).
+        \end{itemize}
+      \end{definition}
+    \end{column}
+    \pause{}
+    \begin{column}{0.5\textwidth}
+      \begin{definition}
+      For pasting diagram \(\Gamma\), define its \emph{stabilised form} \(S(\Gamma)\) by induction:
+      \begin{itemize}
+      \item If \(\Gamma\) is a singleton \(x\), then \(S(\Gamma) = x\).
+      \item If \(\Gamma = \Delta, y, f\) and \(\dim(f) > \dim(\Delta)\) then \(S(\Gamma) = S(\Delta)\langle f \rangle\).
+      \item If \(\Gamma = \Delta, y, f\) and \(\dim(f) \leq \dim(\Delta)\) then \(S(\Gamma) = S(\Delta) \cdot (\delta^+_{\dim(y)}(S(\Delta)))\langle f \rangle \).
+      \end{itemize}
+    \end{definition}
+    \end{column}
+  \end{columns}
+\end{frame}
+\begin{frame}
+  \frametitle{Example}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusions}
+  \begin{itemize}
+  \item We introduced the notion of a stable composite.
+  \item We define a translation \(S\) from an arbitrary pasting diagram to a tree of stable binary composites.
+  \item This translation \(S\) respects boundaries.
+  \item Future aims include:
+    \begin{itemize}
+    \item Proving the existence of an equivalence.
+    \item Generalise the work to prove the viability of many composition schemes.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+\end{document}
