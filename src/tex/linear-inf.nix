@@ -13,10 +13,15 @@ stdenv.mkDerivation {
 
   buildPhase = ''
     latexmk -pdf linear-inf
+    cd talk
+    latexmk -pdf talk.tex
+    cd ..
   '';
 
   installPhase = ''
     mkdir -p $out/pub/
+    mkdir -p $out/talks/
     cp linear-inf.pdf $out/pub
+    cp talk/talk.pdf $out/talks/linear-inf-talk.pdf
   '';
 }

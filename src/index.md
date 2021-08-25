@@ -39,7 +39,9 @@ distribution.
 ## Events
 I have attended the following events:
 
-- Categories and Companions Symposium 2021
+- [FSCD 2021](https://fscd2021.dc.uba.ar/)
+- [ACT 2021](https://www.cl.cam.ac.uk/events/act2021/), which I helped organise.
+- [Categories and Companions Symposium 2021](http://web.science.mq.edu.au/groups/coact/seminar/CaCS2021/)
 - [SYCO 2](http://events.cs.bham.ac.uk/syco/2/)
 - [SYCO 3](http://events.cs.bham.ac.uk/syco/3/)
 - [SYCO 6](http://events.cs.bham.ac.uk/syco/6/)
@@ -50,6 +52,7 @@ I have attended the following events:
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
 
 ## Talks
+- July 2021: New minimal linear inferences in Boolean logic independent of switch and medial, FSCD 2021 ([Recording](https://www.youtube.com/watch?v=rvwuMWTgSl4), [Slides](talks/linear-inf-talk.pdf))
 - June 2021: Categories and Companions Symposium - Biased composition in infinity categories ([Recording](https://www.youtube.com/watch?v=ngApRoAi7UY), [Slides](talks/inf-category-equiv-talk.pdf))
 - 25th September 2020: Birmingham theory group lab lunch - Biased composition in infinity categories
 - 19th March 2020: Birmingham theory group lab lunch - Coinductive Invertibility in Higher Categories ([slides](talks/inverses.pdf))
