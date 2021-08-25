@@ -24,6 +24,7 @@ let
   inverses-pdf = callPackage (import ./tex/inverses.nix) { inherit inverses-agda; };
   linear-inf-pdf = callPackage (import ./tex/linear-inf.nix) { };
   inf-category-equivs-pdf = callPackage (import ./tex/inf-category-equivs.nix) { };
+  strict-assoc-pdf = callPackage (import ./tex/strict-assoc.nix) { };
   inherit (builtins) readFile;
 in rec {
 
@@ -84,7 +85,16 @@ in rec {
   */
   pageList = lib.pagesToList { inherit pages; } ++ strict-group-theory-uf-pages;
 
-  fileList = files ++ [ ./static (strict-group-theory.html) (strict-group-theory-uf.html) (inverses-agda) (inverses-pdf) (linear-inf-pdf) (inf-category-equivs-pdf) ];
+  fileList = files ++ [
+    ./static
+    strict-group-theory.html
+    strict-group-theory-uf.html
+    inverses-agda
+    inverses-pdf
+    linear-inf-pdf
+    inf-category-equivs-pdf
+    strict-assoc-pdf
+  ];
 
   /* Generating the site
   */

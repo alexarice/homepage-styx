@@ -1,10 +1,13 @@
-{ stdenv, texlive, fetchFromGitHub }:
+{ stdenv, texlive }:
 
 stdenv.mkDerivation {
   pname = "linear-inf-pdf";
   version = "preprint";
 
-  src = ./linear-inf;
+  src = fetchGit {
+    url = "ssh://git@github.com/alexarice/linear-inference-7.git";
+    rev = "29416b5bfd122b1cc8e92ea78e7bc1ff5853f8ca";
+  };
 
   buildInputs = [ texlive.combined.scheme-full ];
 

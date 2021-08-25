@@ -45,12 +45,12 @@ I have attended the following events:
 - [SYCO 6](http://events.cs.bham.ac.uk/syco/6/)
 - MGS Christmas lectures in Sheffield 2019
 
-## Publications
-- New minimal linear inferences in Boolean logic independent of switch and medial ([pdf](pub/linear-inf.pdf), [link](https://drops.dagstuhl.de/opus/volltexte/2021/14252/))
+## Papers
+- New minimal linear inferences in Boolean logic independent of switch and medial, FSCD 2021 ([pdf](pub/linear-inf.pdf), [link](https://drops.dagstuhl.de/opus/volltexte/2021/14252/))
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
 
 ## Talks
-- June 2021: Categories and Companions Symposium - Biased composition in infinity categories ([Recording](https://www.youtube.com/watch?v=ngApRoAi7UY), [Slides](talks/inf-category-equivs-talk.pdf)
+- June 2021: Categories and Companions Symposium - Biased composition in infinity categories ([Recording](https://www.youtube.com/watch?v=ngApRoAi7UY), [Slides](talks/inf-category-equiv-talk.pdf))
 - 25th September 2020: Birmingham theory group lab lunch - Biased composition in infinity categories
 - 19th March 2020: Birmingham theory group lab lunch - Coinductive Invertibility in Higher Categories ([slides](talks/inverses.pdf))
 
