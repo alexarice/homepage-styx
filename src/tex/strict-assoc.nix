@@ -9,6 +9,8 @@ stdenv.mkDerivation {
     rev = "15a4206cfb6cbd935e417f7b3d49cbf82b290f4a";
   };
 
+  patches = [ ./strict-assoc-patch.patch ];
+
 
   buildInputs = [ texlive.combined.scheme-full ];
 

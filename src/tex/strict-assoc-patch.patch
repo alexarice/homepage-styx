@@ -1,0 +1,11 @@
+diff --git a/strict-assoc.tex b/strict-assoc.tex
+index b365467..c6f4d62 100644
+--- a/strict-assoc.tex
++++ b/strict-assoc.tex
+@@ -1,5 +1,5 @@
+ %
+-\documentclass[draft]{article}
++\documentclass{article}
+ 
+ \usepackage{verbatim} \usepackage{geometry} \usepackage{amsmath}
+ \usepackage{amssymb} \usepackage{amsfonts} \usepackage{mathtools}
