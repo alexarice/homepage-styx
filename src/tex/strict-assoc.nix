@@ -6,7 +6,7 @@ stdenv.mkDerivation {
 
   src = builtins.fetchGit {
     url = "ssh://git@github.com/alexarice/strict-assoc.git";
-    rev = "9003f87a5010bc1eebbdd3cf3163b797a73cadba";
+    rev = "15a4206cfb6cbd935e417f7b3d49cbf82b290f4a";
   };
 
 

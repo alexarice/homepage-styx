@@ -42,12 +42,13 @@ I have attended the following events:
 - [FSCD 2021](https://fscd2021.dc.uba.ar/)
 - [ACT 2021](https://www.cl.cam.ac.uk/events/act2021/), which I helped organise.
 - [Categories and Companions Symposium 2021](http://web.science.mq.edu.au/groups/coact/seminar/CaCS2021/)
-- [SYCO 2](http://events.cs.bham.ac.uk/syco/2/)
-- [SYCO 3](http://events.cs.bham.ac.uk/syco/3/)
 - [SYCO 6](http://events.cs.bham.ac.uk/syco/6/)
+- [SYCO 3](http://events.cs.bham.ac.uk/syco/3/)
+- [SYCO 2](http://events.cs.bham.ac.uk/syco/2/)
 - MGS Christmas lectures in Sheffield 2019
 
 ## Papers
+- A Type Theory for Strictly Associative Infinity Categories ([pdf](pub/strict-assoc.pdf), [arxiv](https://arxiv.org/abs/2109.01513))
 - New minimal linear inferences in Boolean logic independent of switch and medial, FSCD 2021 ([pdf](pub/linear-inf.pdf), [link](https://drops.dagstuhl.de/opus/volltexte/2021/14252/))
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
 
