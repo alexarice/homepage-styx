@@ -33,12 +33,16 @@ distribution.
 - Teaching assistant for "Advanced Functional Programming" (Autumn 2019)
 - Teaching assistant for "Logic and Computation" (Spring 2019)
 - Supervisor for "Semantics of Programming Languages" (Autumn 2020)
-- Supervisor for "Prolog" (Spring 2020)
-- Supervisor for "Introduction to Probability" (Summer 2020)
+- Supervisor for "Prolog" (Spring 2021 and Spring 2022)
+- Supervisor for "Introduction to Probability" (Summer 2021)
+- Supervisor for "Object Oriented Programming" (Autumn 2021)
+
 
 ## Events
 I have attended the following events:
 
+- [Midlands graduate school (MGS) 2022](https://www.cs.nott.ac.uk/~psznk/events/mgs22.html)
+- [Logic and Higher Structures](https://conferences.cirm-math.fr/2689.html)
 - [FSCD 2021](https://fscd2021.dc.uba.ar/)
 - [ACT 2021](https://www.cl.cam.ac.uk/events/act2021/), which I helped organise.
 - [Categories and Companions Symposium 2021](http://web.science.mq.edu.au/groups/coact/seminar/CaCS2021/)
