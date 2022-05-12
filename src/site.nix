@@ -25,6 +25,7 @@ let
   linear-inf-pdf = callPackage (import ./tex/linear-inf.nix) { };
   inf-category-equivs-pdf = callPackage (import ./tex/inf-category-equivs.nix) { };
   strict-assoc-pdf = callPackage (import ./tex/strict-assoc.nix) { };
+  semistrict-pdf = callPackage (import ./tex/semistrict.nix) { };
   inherit (builtins) readFile;
 in rec {
 
@@ -94,6 +95,7 @@ in rec {
     linear-inf-pdf
     inf-category-equivs-pdf
     strict-assoc-pdf
+    semistrict-pdf
   ];
 
   /* Generating the site
