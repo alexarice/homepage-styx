@@ -26,6 +26,7 @@ let
   inf-category-equivs-pdf = callPackage (import ./tex/inf-category-equivs.nix) { };
   strict-assoc-pdf = callPackage (import ./tex/strict-assoc.nix) { };
   semistrict-pdf = callPackage (import ./tex/semistrict.nix) { };
+  strict-units-pdf = callPackage (import ./tex/strict-units.nix) { };
   inherit (builtins) readFile;
 in rec {
 
@@ -96,6 +97,7 @@ in rec {
     inf-category-equivs-pdf
     strict-assoc-pdf
     semistrict-pdf
+    strict-units-pdf
   ];
 
   /* Generating the site

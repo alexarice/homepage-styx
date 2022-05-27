@@ -41,6 +41,7 @@ distribution.
 ## Events
 I have attended the following events:
 
+- [YAMCATS 27](https://conferences.leeds.ac.uk/yamcats/meeting27/)
 - [Midlands graduate school (MGS) 2022](https://www.cs.nott.ac.uk/~psznk/events/mgs22.html)
 - [Logic and Higher Structures](https://conferences.cirm-math.fr/2689.html)
 - [FSCD 2021](https://fscd2021.dc.uba.ar/)
@@ -52,11 +53,13 @@ I have attended the following events:
 - MGS Christmas lectures in Sheffield 2019
 
 ## Papers
+- A Type Theory for Strictly Unital Infinity Categories ([pdf](pub/strict-units.pdf), [arxiv](https://arxiv.org/abs/2007.08307))
 - A Type Theory for Strictly Associative Infinity Categories ([pdf](pub/strict-assoc.pdf), [arxiv](https://arxiv.org/abs/2109.01513))
 - New minimal linear inferences in Boolean logic independent of switch and medial, FSCD 2021 ([pdf](pub/linear-inf.pdf), [link](https://drops.dagstuhl.de/opus/volltexte/2021/14252/))
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
 
 ## Talks
+- May 2022: Type theoretic approaches to semistrict higher categories, YAMCATS 27 ([Slides](talks/semistrict.pdf))
 - July 2021: New minimal linear inferences in Boolean logic independent of switch and medial, FSCD 2021 ([Recording](https://www.youtube.com/watch?v=rvwuMWTgSl4), [Slides](talks/linear-inf-talk.pdf))
 - June 2021: Categories and Companions Symposium - Biased composition in infinity categories ([Recording](https://www.youtube.com/watch?v=ngApRoAi7UY), [Slides](talks/inf-category-equiv-talk.pdf))
 - 25th September 2020: Birmingham theory group lab lunch - Biased composition in infinity categories
