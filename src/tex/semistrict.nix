@@ -6,7 +6,7 @@ stdenv.mkDerivation {
 
   src = fetchGit {
     url = "ssh://git@github.com/alexarice/semistrict-talk.git";
-    rev = "07b4e911a8d7c1db5acfbdb2e334209dd0f79c66";
+    rev = "cd199158037305a965dd8c201af711a200cf3d4d";
     ref = "main";
   };
 
