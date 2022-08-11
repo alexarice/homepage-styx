@@ -82,7 +82,7 @@ in rec {
     } // data.strict-group-theory-post;
     syllepsis = {
       path = "/posts/syllepsis.html";
-      title = "The Kavvos-Sojakova proof of Syllepsis in Agda";
+      title = "The Kavvos-Sojakova Proof of Syllepsis in Agda";
       template = templates.agdaPostLayout;
       layout = templates.layout;
     } // data.syllepsis-post;

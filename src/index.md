@@ -66,6 +66,7 @@ I have attended the following events:
 - 19th March 2020: Birmingham theory group lab lunch - Coinductive Invertibility in Higher Categories ([slides](talks/inverses.pdf))
 
 ## Posts
+- [The Kavvos-Sojakova proof of Syllepsis in Agda](posts/syllepsis.html)
 - [Linear inferences of size 7](https://prooftheory.blog/2020/10/01/linear-inferences-of-size-7/) - 09/10/2020
 - [Strictly Associative Group Theory using Univalence](posts/sgtuf/Strict-Group-Theory-UF.html) - 29/05/2020
 - [Strictly Associative Group Theory](posts/strict-group-theory.html) - 26/03/2020

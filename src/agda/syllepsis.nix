@@ -7,8 +7,8 @@ mkDerivation rec {
   src = fetchFromGitHub {
     owner = "alexarice";
     repo = "Syllepsis";
-    rev = "65e56d41256089ae73b5bb84312717733b0b6bfa";
-    hash = "sha256-FK2NAbvt2lSpXHq2ifgixWr84ek3pLUrF+QsgCAjT94=";
+    rev = "c8f6fad84351ff8ada623d053947afc2a6224be3";
+    hash = "sha256-nY5eLG4OTxS13QePd12iyIBIdyV4zn4CZJXnxxu/Zf8=";
   };
 
   LC_ALL = "en_GB.UTF-8";
