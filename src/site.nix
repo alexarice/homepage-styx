@@ -4,7 +4,8 @@
    Initialization of Styx, should not be edited
 -----------------------------------------------------------------------------*/
 { styx
-, agdaPackages
+, agdaPackages-2_6_1
+, agdaPackages-2_6_2
 , callPackage
 , fetchFromGitHub
 , extraConf ? {}
@@ -14,19 +15,20 @@
 }:
 
 let
-  strict-group-theory = agdaPackages.callPackage ./agda/strict-group-theory.nix {
-    groups = agdaPackages.callPackage ./agda/packages/groups.nix { };
+  strict-group-theory = agdaPackages-2_6_1.callPackage ./agda/strict-group-theory.nix {
+    groups = agdaPackages-2_6_1.callPackage ./agda/packages/groups.nix { };
   };
-  strict-group-theory-uf = agdaPackages.callPackage ./agda/strict-group-theory-uf.nix {
-    groups-uf = agdaPackages.callPackage ./agda/packages/groups-uf.nix { };
+  strict-group-theory-uf = agdaPackages-2_6_1.callPackage ./agda/strict-group-theory-uf.nix {
+    groups-uf = agdaPackages-2_6_1.callPackage ./agda/packages/groups-uf.nix { };
   };
-  inverses-agda = agdaPackages.callPackage ./agda/inverses.nix { };
+  inverses-agda = agdaPackages-2_6_1.callPackage ./agda/inverses.nix { };
   inverses-pdf = callPackage (import ./tex/inverses.nix) { inherit inverses-agda; };
   linear-inf-pdf = callPackage (import ./tex/linear-inf.nix) { };
   inf-category-equivs-pdf = callPackage (import ./tex/inf-category-equivs.nix) { };
   strict-assoc-pdf = callPackage (import ./tex/strict-assoc.nix) { };
   semistrict-pdf = callPackage (import ./tex/semistrict.nix) { };
   strict-units-pdf = callPackage (import ./tex/strict-units.nix) { };
+  syllepsis = agdaPackages-2_6_2.callPackage (import ./agda/syllepsis.nix) { };
   inherit (builtins) readFile;
 in rec {
 
@@ -57,6 +59,11 @@ in rec {
       asAttrs = true;
       inherit env;
     };
+
+    syllepsis-post = lib.loadFile {
+      file = "${syllepsis}/Syllepsis.md";
+      inherit env;
+    };
   };
 
 
@@ -73,6 +80,12 @@ in rec {
       template = templates.agdaPostLayout;
       layout = templates.layout;
     } // data.strict-group-theory-post;
+    syllepsis = {
+      path = "/posts/syllepsis.html";
+      title = "The Kavvos-Sojakova proof of Syllepsis in Agda";
+      template = templates.agdaPostLayout;
+      layout = templates.layout;
+    } // data.syllepsis-post;
   };
 
   agdaToPages = basePath: pages: map (x: x // { path = "${basePath}/${x.fileData.basename}.html"; }) (lib.pagesToList {
