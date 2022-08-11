@@ -1,7 +1,7 @@
 
 <img class="photo" src="rice.jpg" width="200" title="Photo Credit: George Kaye">
 
-I have just transferred to the University of Cambridge after completing the first year of my PhD at the University of Birmingham. I am
+I am studying at the University of Cambridge after completing the first year of my PhD at the University of Birmingham. I am
 working under the supervision of [Jamie Vicary](https://www.cl.cam.ac.uk/~jv258/).
 
 ## Contact
@@ -37,10 +37,10 @@ distribution.
 - Supervisor for "Introduction to Probability" (Summer 2021)
 - Supervisor for "Object Oriented Programming" (Autumn 2021)
 
-
 ## Events
 I have attended the following events:
 
+- [FLOC 2022](https://www.floc2022.org/) ([HoTT/UF](https://hott-uf.github.io/2022/), [LICS](https://lics.siglog.org/lics22/), [FSCD](http://www.cs.tau.ac.il/~nachumd/FSCD/))
 - [YAMCATS 27](https://conferences.leeds.ac.uk/yamcats/meeting27/)
 - [Midlands graduate school (MGS) 2022](https://www.cs.nott.ac.uk/~psznk/events/mgs22.html)
 - [Logic and Higher Structures](https://conferences.cirm-math.fr/2689.html)
@@ -59,6 +59,7 @@ I have attended the following events:
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
 
 ## Talks
+- August 2022: A Type Theory for Strictly Unital Infinity Categories, LICS 2022 ([Slides](talks/strict-units.pdf))
 - May 2022: Type theoretic approaches to semistrict higher categories, YAMCATS 27 ([Slides](talks/semistrict.pdf))
 - July 2021: New minimal linear inferences in Boolean logic independent of switch and medial, FSCD 2021 ([Recording](https://www.youtube.com/watch?v=rvwuMWTgSl4), [Slides](talks/linear-inf-talk.pdf))
 - June 2021: Categories and Companions Symposium - Biased composition in infinity categories ([Recording](https://www.youtube.com/watch?v=ngApRoAi7UY), [Slides](talks/inf-category-equiv-talk.pdf))

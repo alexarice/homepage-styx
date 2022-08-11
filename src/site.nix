@@ -81,11 +81,17 @@ in rec {
       layout = templates.layout;
     } // data.strict-group-theory-post;
     syllepsis = {
-      path = "/posts/syllepsis.html";
+      path = "/posts/Syllepsis.html";
       title = "The Kavvos-Sojakova Proof of Syllepsis in Agda";
       template = templates.agdaPostLayout;
       layout = templates.layout;
     } // data.syllepsis-post;
+    syllepsis-alias = {
+      path = "/posts/syllepsis.html";
+      redirect-url = "Syllepsis.html";
+      layout = lib.id;
+      template = templates.redirect;
+    };
   };
 
   agdaToPages = basePath: pages: map (x: x // { path = "${basePath}/${x.fileData.basename}.html"; }) (lib.pagesToList {

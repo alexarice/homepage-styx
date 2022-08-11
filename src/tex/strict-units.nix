@@ -6,7 +6,7 @@ stdenv.mkDerivation {
 
   src = builtins.fetchGit {
     url = "ssh://git@github.com/jamievicary/strict_units.git";
-    rev = "c152f6a558e7178ff2af7744b9c20693b5d07c38";
+    rev = "b15a8f6425d7773fa7713bd2901c9287e0de3ac7";
     ref = "main";
   };
 
