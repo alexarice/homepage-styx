@@ -27,6 +27,7 @@ let
   inf-category-equivs-pdf = callPackage (import ./tex/inf-category-equivs.nix) { };
   strict-assoc-pdf = callPackage (import ./tex/strict-assoc.nix) { };
   semistrict-pdf = callPackage (import ./tex/semistrict.nix) { };
+  syco10-pdf = callPackage (import ./tex/syco10.nix) { };
   strict-units-pdf = callPackage (import ./tex/strict-units.nix) { };
   syllepsis = agdaPackages-2_6_2.callPackage (import ./agda/syllepsis.nix) { };
   inherit (builtins) readFile;
@@ -116,6 +117,7 @@ in rec {
     inf-category-equivs-pdf
     strict-assoc-pdf
     semistrict-pdf
+    syco10-pdf
     strict-units-pdf
   ];
 

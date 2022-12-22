@@ -40,6 +40,7 @@ distribution.
 ## Events
 I have attended the following events:
 
+- [SYCO 10](https://cl.cam.ac.uk/syco/10)
 - [FLOC 2022](https://www.floc2022.org/) ([HoTT/UF](https://hott-uf.github.io/2022/), [LICS](https://lics.siglog.org/lics22/), [FSCD](http://www.cs.tau.ac.il/~nachumd/FSCD/))
 - [YAMCATS 27](https://conferences.leeds.ac.uk/yamcats/meeting27/)
 - [Midlands graduate school (MGS) 2022](https://www.cs.nott.ac.uk/~psznk/events/mgs22.html)
@@ -47,9 +48,9 @@ I have attended the following events:
 - [FSCD 2021](https://fscd2021.dc.uba.ar/)
 - [ACT 2021](https://www.cl.cam.ac.uk/events/act2021/), which I helped organise.
 - [Categories and Companions Symposium 2021](http://web.science.mq.edu.au/groups/coact/seminar/CaCS2021/)
-- [SYCO 6](http://events.cs.bham.ac.uk/syco/6/)
-- [SYCO 3](http://events.cs.bham.ac.uk/syco/3/)
-- [SYCO 2](http://events.cs.bham.ac.uk/syco/2/)
+- [SYCO 6](https://cl.cam.ac.uk/syco/6/)
+- [SYCO 3](https://cl.cam.ac.uk/syco/3/)
+- [SYCO 2](https://cl.cam.ac.uk/syco/2/)
 - MGS Christmas lectures in Sheffield 2019
 
 ## Papers
@@ -59,6 +60,7 @@ I have attended the following events:
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
 
 ## Talks
+- December 2022: A Type Theory for Strictly Associative Infinity Categories, SYCO 10 ([Slides](talks/syco10.pdf))
 - August 2022: A Type Theory for Strictly Unital Infinity Categories, LICS 2022 ([Slides](talks/strict-units.pdf))
 - May 2022: Type theoretic approaches to semistrict higher categories, YAMCATS 27 ([Slides](talks/semistrict.pdf))
 - July 2021: New minimal linear inferences in Boolean logic independent of switch and medial, FSCD 2021 ([Recording](https://www.youtube.com/watch?v=rvwuMWTgSl4), [Slides](talks/linear-inf-talk.pdf))
