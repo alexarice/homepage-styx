@@ -26,6 +26,7 @@ let
   linear-inf-pdf = callPackage (import ./tex/linear-inf.nix) { };
   inf-category-equivs-pdf = callPackage (import ./tex/inf-category-equivs.nix) { };
   strict-assoc-pdf = callPackage (import ./tex/strict-assoc.nix) { };
+  strict-unit-assoc-pdf = callPackage (import ./tex/strict-unit-assoc.nix) { };
   semistrict-pdf = callPackage (import ./tex/semistrict.nix) { };
   syco10-pdf = callPackage (import ./tex/syco10.nix) { };
   strict-units-pdf = callPackage (import ./tex/strict-units.nix) { };
@@ -119,6 +120,7 @@ in rec {
     semistrict-pdf
     syco10-pdf
     strict-units-pdf
+    strict-unit-assoc-pdf
   ];
 
   /* Generating the site

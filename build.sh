@@ -1,6 +1,6 @@
 #!/bin/sh
 
-path=$(nix build --json --no-link --print-build-logs | jq -r .[0].outputs.out)
+path=$(nix build --json --no-link --print-build-logs --keep-going | jq -r .[0].outputs.out)
 
 if [ "$path" == "" ]; then
     echo "Nix failed"

@@ -54,7 +54,8 @@ I have attended the following events:
 - MGS Christmas lectures in Sheffield 2019
 
 ## Papers
-- A Type Theory for Strictly Unital Infinity Categories ([pdf](pub/strict-units.pdf), [arxiv](https://arxiv.org/abs/2007.08307))
+- Strictly Associative and Unital ∞-Categories as a Generalized Algebraic Theory ([pdf](pub/strict-unit-assoc.pdf),[arxiv](https://arxiv.org/abs/2302.05303))
+- A Type Theory for Strictly Unital Infinity Categories ([pdf](pub/strict-units.pdf), [arxiv](https://arxiv.org/abs/2007.08307),[doi](https://dl.acm.org/doi/10.1145/3531130.3533363))
 - A Type Theory for Strictly Associative Infinity Categories ([pdf](pub/strict-assoc.pdf), [arxiv](https://arxiv.org/abs/2109.01513))
 - New minimal linear inferences in Boolean logic independent of switch and medial, FSCD 2021 ([pdf](pub/linear-inf.pdf), [link](https://drops.dagstuhl.de/opus/volltexte/2021/14252/))
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
