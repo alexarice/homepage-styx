@@ -9,7 +9,6 @@ working under the supervision of [Jamie Vicary](https://www.cl.cam.ac.uk/~jv258/
 | - | - |
 Email          | alex.rice at cl.cam.ac.uk
 Office Address | Office FS35 <br> The Computer Laboratory <br> University of Cambridge <br> William Gates Building <br> Cambridge <br> CB3 0FD <br> United Kingdom
-[Matrix](https://matrix.org)         | @alexarice:matrix.org
 GitHub         | [https://github.com/alexarice](https://github.com/alexarice)
 
 ## About Me
@@ -25,33 +24,8 @@ During this time I took courses including Category Theory (including
 theory of monoidal categories), Algebraic Topology, Homological
 Algebra, Logic, ZFC Set Theory, and Representation Theory.
 
-I also enjoy playing with functional programming languages such as
-Haskell or Agda and am a user of Emacs and the Nixos Linux
+I also enjoy formalising things in Agda and and am a user of Emacs and the NixOS Linux
 distribution.
-
-## Teaching
-- Teaching assistant for "Advanced Functional Programming" (Autumn 2019)
-- Teaching assistant for "Logic and Computation" (Spring 2019)
-- Supervisor for "Semantics of Programming Languages" (Autumn 2020)
-- Supervisor for "Prolog" (Spring 2021 and Spring 2022)
-- Supervisor for "Introduction to Probability" (Summer 2021)
-- Supervisor for "Object Oriented Programming" (Autumn 2021)
-
-## Events
-I have attended the following events:
-
-- [SYCO 10](https://cl.cam.ac.uk/syco/10)
-- [FLOC 2022](https://www.floc2022.org/) ([HoTT/UF](https://hott-uf.github.io/2022/), [LICS](https://lics.siglog.org/lics22/), [FSCD](http://www.cs.tau.ac.il/~nachumd/FSCD/))
-- [YAMCATS 27](https://conferences.leeds.ac.uk/yamcats/meeting27/)
-- [Midlands graduate school (MGS) 2022](https://www.cs.nott.ac.uk/~psznk/events/mgs22.html)
-- [Logic and Higher Structures](https://conferences.cirm-math.fr/2689.html)
-- [FSCD 2021](https://fscd2021.dc.uba.ar/)
-- [ACT 2021](https://www.cl.cam.ac.uk/events/act2021/), which I helped organise.
-- [Categories and Companions Symposium 2021](http://web.science.mq.edu.au/groups/coact/seminar/CaCS2021/)
-- [SYCO 6](https://cl.cam.ac.uk/syco/6/)
-- [SYCO 3](https://cl.cam.ac.uk/syco/3/)
-- [SYCO 2](https://cl.cam.ac.uk/syco/2/)
-- MGS Christmas lectures in Sheffield 2019
 
 ## Papers
 - Strictly Associative and Unital ∞-Categories as a Generalized Algebraic Theory ([pdf](pub/strict-unit-assoc.pdf),[arxiv](https://arxiv.org/abs/2302.05303))
@@ -74,3 +48,27 @@ I have attended the following events:
 - [Linear inferences of size 7](https://prooftheory.blog/2020/10/01/linear-inferences-of-size-7/) - 09/10/2020
 - [Strictly Associative Group Theory using Univalence](posts/sgtuf/Strict-Group-Theory-UF.html) - 29/05/2020
 - [Strictly Associative Group Theory](posts/strict-group-theory.html) - 26/03/2020
+
+## Teaching
+- Teaching assistant for "Advanced Functional Programming" (Autumn 2019)
+- Teaching assistant for "Logic and Computation" (Spring 2019)
+- Supervisor for "Semantics of Programming Languages" (Autumn 2020)
+- Supervisor for "Prolog" (Spring 2021, Spring 2022, and Spring 2023)
+- Supervisor for "Introduction to Probability" (Summer 2021)
+- Supervisor for "Object Oriented Programming" (Autumn 2021)
+
+## Events
+I have attended the following events:
+
+- [SYCO 10](https://cl.cam.ac.uk/syco/10)
+- [FLOC 2022](https://www.floc2022.org/) ([HoTT/UF](https://hott-uf.github.io/2022/), [LICS](https://lics.siglog.org/lics22/), [FSCD](http://www.cs.tau.ac.il/~nachumd/FSCD/))
+- [YAMCATS 27](https://conferences.leeds.ac.uk/yamcats/meeting27/)
+- [Midlands graduate school (MGS) 2022](https://www.cs.nott.ac.uk/~psznk/events/mgs22.html)
+- [Logic and Higher Structures](https://conferences.cirm-math.fr/2689.html)
+- [FSCD 2021](https://fscd2021.dc.uba.ar/)
+- [ACT 2021](https://www.cl.cam.ac.uk/events/act2021/), which I helped organise.
+- [Categories and Companions Symposium 2021](http://web.science.mq.edu.au/groups/coact/seminar/CaCS2021/)
+- [SYCO 6](https://cl.cam.ac.uk/syco/6/)
+- [SYCO 3](https://cl.cam.ac.uk/syco/3/)
+- [SYCO 2](https://cl.cam.ac.uk/syco/2/)
+- MGS Christmas lectures in Sheffield 2019
