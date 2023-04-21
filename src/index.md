@@ -35,6 +35,7 @@ distribution.
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
 
 ## Talks
+- April 2023: Strictly Associative Group Theory using Univalence, HoTT/UF 2023 ([slides](talks/sgtuf.pdf))
 - December 2022: A Type Theory for Strictly Associative Infinity Categories, SYCO 10 ([Slides](talks/syco10.pdf))
 - August 2022: A Type Theory for Strictly Unital Infinity Categories, LICS 2022 ([Slides](talks/strict-units.pdf))
 - May 2022: Type theoretic approaches to semistrict higher categories, YAMCATS 27 ([Slides](talks/semistrict.pdf))
@@ -60,6 +61,8 @@ distribution.
 ## Events
 I have attended the following events:
 
+- [HoTT/UF 2023](https://hott-uf.github.io/2023/)
+- [SYCO 11](https://cl.cam.ac.uk/syco/11)
 - [SYCO 10](https://cl.cam.ac.uk/syco/10)
 - [FLOC 2022](https://www.floc2022.org/) ([HoTT/UF](https://hott-uf.github.io/2022/), [LICS](https://lics.siglog.org/lics22/), [FSCD](http://www.cs.tau.ac.il/~nachumd/FSCD/))
 - [YAMCATS 27](https://conferences.leeds.ac.uk/yamcats/meeting27/)
