@@ -12,6 +12,7 @@ mkDerivation {
     agda talk.lagda.tex --latex --count-clusters
     cd latex
     pdflatex talk.tex
+    pdflatex talk.tex
     cd ..
   '';
 
