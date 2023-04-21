@@ -6,6 +6,7 @@
 { styx
 , agdaPackages-2_6_1
 , agdaPackages-2_6_2
+, agdaPackages-2_6_3
 , callPackage
 , fetchFromGitHub
 , extraConf ? {}
@@ -15,11 +16,12 @@
 }:
 
 let
+  groups-uf = agdaPackages-2_6_3.callPackage ./agda/packages/groups-uf.nix { };
   strict-group-theory = agdaPackages-2_6_1.callPackage ./agda/strict-group-theory.nix {
     groups = agdaPackages-2_6_1.callPackage ./agda/packages/groups.nix { };
   };
-  strict-group-theory-uf = agdaPackages-2_6_1.callPackage ./agda/strict-group-theory-uf.nix {
-    groups-uf = agdaPackages-2_6_1.callPackage ./agda/packages/groups-uf.nix { };
+  strict-group-theory-uf = agdaPackages-2_6_3.callPackage ./agda/strict-group-theory-uf.nix {
+    inherit groups-uf;
   };
   inverses-agda = agdaPackages-2_6_1.callPackage ./agda/inverses.nix { };
   inverses-pdf = callPackage (import ./tex/inverses.nix) { inherit inverses-agda; };
@@ -112,6 +114,7 @@ in rec {
     ./static
     strict-group-theory.html
     strict-group-theory-uf.html
+    groups-uf.latex
     inverses-agda
     inverses-pdf
     linear-inf-pdf
