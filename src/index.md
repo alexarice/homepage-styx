@@ -13,8 +13,7 @@ GitHub         | [https://github.com/alexarice](https://github.com/alexarice)
 
 ## About Me
 
-My main interests at the moment are category theory, especially higher
-category theory, and Homotopy Type Theory. I am currently looking at
+My main interests at the moment are type theory, including Homotopy Type Theory, and its applications to higher category theory. I am currently looking at
 various definitions of globular higher categories and am thinking
 about semi-strictness problems and types of composition.
 
@@ -28,29 +27,33 @@ I also enjoy formalising things in Agda and and am a user of Emacs and the NixOS
 distribution.
 
 ## Papers
-- Strictly Associative and Unital ∞-Categories as a Generalized Algebraic Theory ([pdf](pub/strict-unit-assoc.pdf),[arxiv](https://arxiv.org/abs/2302.05303))
-- A Type Theory for Strictly Unital Infinity Categories ([pdf](pub/strict-units.pdf), [arxiv](https://arxiv.org/abs/2007.08307),[doi](https://dl.acm.org/doi/10.1145/3531130.3533363))
+
+- Strictly Associative and Unital ∞-Categories as a Generalized Algebraic Theory ([pdf](pub/strict-unit-assoc.pdf), [arxiv](https://arxiv.org/abs/2302.05303))
+- A Type Theory for Strictly Unital Infinity Categories ([pdf](pub/strict-units.pdf), [arxiv](https://arxiv.org/abs/2007.08307), [doi](https://dl.acm.org/doi/10.1145/3531130.3533363))
 - A Type Theory for Strictly Associative Infinity Categories ([pdf](pub/strict-assoc.pdf), [arxiv](https://arxiv.org/abs/2109.01513))
 - New minimal linear inferences in Boolean logic independent of switch and medial, Extended version in LMCS ([pdf](papers/lin-inf-extended.pdf), [arxiv](https://arxiv.org/abs/2111.05209), [lmcs](https://lmcs.episciences.org/11337)), originally presented at FSCD 2021 ([pdf](pub/linear-inf.pdf), [link](https://drops.dagstuhl.de/opus/volltexte/2021/14252/))
-- Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf),[formalisation](pub/inverses/Everything.html),[github](https://github.com/alexarice/Inverses),[arxiv](https://arxiv.org/abs/2008.10307))
+- Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf), [formalisation](pub/inverses/Everything.html), [github](https://github.com/alexarice/Inverses), [arxiv](https://arxiv.org/abs/2008.10307))
 
 ## Talks
+
 - April 2023: Strictly Associative Group Theory using Univalence, HoTT/UF 2023 ([slides](talks/sgtuf.pdf))
-- December 2022: A Type Theory for Strictly Associative Infinity Categories, SYCO 10 ([Slides](talks/syco10.pdf))
-- August 2022: A Type Theory for Strictly Unital Infinity Categories, LICS 2022 ([Slides](talks/strict-units.pdf))
-- May 2022: Type theoretic approaches to semistrict higher categories, YAMCATS 27 ([Slides](talks/semistrict.pdf))
-- July 2021: New minimal linear inferences in Boolean logic independent of switch and medial, FSCD 2021 ([Recording](https://www.youtube.com/watch?v=rvwuMWTgSl4), [Slides](talks/linear-inf-talk.pdf))
-- June 2021: Categories and Companions Symposium - Biased composition in infinity categories ([Recording](https://www.youtube.com/watch?v=ngApRoAi7UY), [Slides](talks/inf-category-equiv-talk.pdf))
+- December 2022: A Type Theory for Strictly Associative Infinity Categories, SYCO 10 ([slides](talks/syco10.pdf))
+- August 2022: A Type Theory for Strictly Unital Infinity Categories, LICS 2022 ([slides](talks/strict-units.pdf))
+- May 2022: Type theoretic approaches to semistrict higher categories, YAMCATS 27 ([slides](talks/semistrict.pdf))
+- July 2021: New minimal linear inferences in Boolean logic independent of switch and medial, FSCD 2021 ([recording](https://www.youtube.com/watch?v=rvwuMWTgSl4), [slides](talks/linear-inf-talk.pdf))
+- June 2021: Categories and Companions Symposium - Biased composition in infinity categories ([recording](https://www.youtube.com/watch?v=ngApRoAi7UY), [slides](talks/inf-category-equiv-talk.pdf))
 - 25th September 2020: Birmingham theory group lab lunch - Biased composition in infinity categories
 - 19th March 2020: Birmingham theory group lab lunch - Coinductive Invertibility in Higher Categories ([slides](talks/inverses.pdf))
 
 ## Posts
+
 - [The Kavvos-Sojakova proof of Syllepsis in Agda](posts/syllepsis.html)
 - [Linear inferences of size 7](https://prooftheory.blog/2020/10/01/linear-inferences-of-size-7/) - 09/10/2020
 - [Strictly Associative Group Theory using Univalence](posts/sgtuf/Strict-Group-Theory-UF.html) - 29/05/2020
 - [Strictly Associative Group Theory](posts/strict-group-theory.html) - 26/03/2020
 
 ## Teaching
+
 - Teaching assistant for "Advanced Functional Programming" (Autumn 2019)
 - Teaching assistant for "Logic and Computation" (Spring 2019)
 - Supervisor for "Semantics of Programming Languages" (Autumn 2020)
@@ -59,6 +62,7 @@ distribution.
 - Supervisor for "Object Oriented Programming" (Autumn 2021)
 
 ## Events
+
 I have attended the following events:
 
 - [HoTT/UF 2023](https://hott-uf.github.io/2023/)
