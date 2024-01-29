@@ -5,8 +5,8 @@
 -----------------------------------------------------------------------------*/
 { styx
 , agdaPackages-2_6_1
-, agdaPackages-2_6_2
 , agdaPackages-2_6_3
+, agdaPackages-2_6_4
 , callPackage
 , fetchFromGitHub
 , extraConf ? {}
@@ -32,7 +32,7 @@ let
   semistrict-pdf = callPackage (import ./tex/semistrict.nix) { };
   syco10-pdf = callPackage (import ./tex/syco10.nix) { };
   strict-units-pdf = callPackage (import ./tex/strict-units.nix) { };
-  syllepsis = agdaPackages-2_6_2.callPackage (import ./agda/syllepsis.nix) { };
+  syllepsis = agdaPackages-2_6_4.callPackage (import ./agda/syllepsis.nix) { };
   inherit (builtins) readFile;
 in rec {
 
