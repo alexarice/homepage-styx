@@ -54,12 +54,13 @@ distribution.
 
 ## Teaching
 
-- Teaching assistant for "Advanced Functional Programming" (Autumn 2019)
-- Teaching assistant for "Logic and Computation" (Spring 2019)
-- Supervisor for "Semantics of Programming Languages" (Autumn 2020)
+- Guest lecturer for "Advanced Topics in Category Theory" (Spring 2024)
 - Supervisor for "Prolog" (Spring 2021, Spring 2022, and Spring 2023)
 - Supervisor for "Introduction to Probability" (Summer 2021)
 - Supervisor for "Object Oriented Programming" (Autumn 2021)
+- Supervisor for "Semantics of Programming Languages" (Autumn 2020)
+- Teaching assistant for "Advanced Functional Programming" (Autumn 2019)
+- Teaching assistant for "Logic and Computation" (Spring 2019)
 
 ## Events
 
