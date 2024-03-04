@@ -31,6 +31,7 @@ let
   semistrict-pdf = callPackage (import ./tex/semistrict.nix) { };
   syco10-pdf = callPackage (import ./tex/syco10.nix) { };
   strict-units-pdf = callPackage (import ./tex/strict-units.nix) { };
+  catt-agda = agdaPackages-2_6_4.callPackage (import ./agda/catt-agda.nix) { };
   syllepsis = agdaPackages-2_6_4.callPackage (import ./agda/syllepsis.nix) { };
   inherit (builtins) readFile;
 in rec {
@@ -123,6 +124,7 @@ in rec {
     syco10-pdf
     strict-units-pdf
     strict-unit-assoc-pdf
+    catt-agda
   ];
 
   /* Generating the site
