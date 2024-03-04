@@ -24,16 +24,13 @@
 
       packages.site = (pkgs.callPackage (import ./src/site.nix) {
         agdaPackages-2_6_1 = all-agda.legacyPackages."x86_64-linux".agdaPackages-2_6_1;
-        agdaPackages-2_6_3 = all-agda.legacyPackages."x86_64-linux".agdaPackages-2_6_3;
         agdaPackages-2_6_4 = all-agda.legacyPackages."x86_64-linux".agdaPackages-2_6_4;
         styx = styx.defaultPackage."x86_64-linux";
         styxLib = styx.lib.x86_64-linux;
         styx-themes = styx.themes.x86_64-linux;
-
       }).site;
 
       defaultPackage = packages.site;
-
     }
   );
 }

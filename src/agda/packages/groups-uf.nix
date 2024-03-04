@@ -26,7 +26,7 @@ mkDerivation {
   src = fetchFromGitHub {
     owner = "alexarice";
     repo = "GroupsUF";
-    rev = "352177a9c98659f6dd79b700d952757615465393";
-    sha256 = "sha256-a3K0udXk8EE+oRpUhh3z/ScV5OIAZLFj0QHvWZnTjg8=";
+    rev = "99a10fc05a7706504fbac6849809387caa625c53";
+    sha256 = "sha256-SXcXoGnInMgS/l8JKFEkuSDwbHD97wiZHurMBjaI+Vc=";
   };
 }

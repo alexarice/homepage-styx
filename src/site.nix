@@ -5,7 +5,6 @@
 -----------------------------------------------------------------------------*/
 { styx
 , agdaPackages-2_6_1
-, agdaPackages-2_6_3
 , agdaPackages-2_6_4
 , callPackage
 , fetchFromGitHub
@@ -16,11 +15,11 @@
 }:
 
 let
-  groups-uf = agdaPackages-2_6_3.callPackage ./agda/packages/groups-uf.nix { };
+  groups-uf = agdaPackages-2_6_4.callPackage ./agda/packages/groups-uf.nix { };
   strict-group-theory = agdaPackages-2_6_1.callPackage ./agda/strict-group-theory.nix {
     groups = agdaPackages-2_6_1.callPackage ./agda/packages/groups.nix { };
   };
-  strict-group-theory-uf = agdaPackages-2_6_3.callPackage ./agda/strict-group-theory-uf.nix {
+  strict-group-theory-uf = agdaPackages-2_6_4.callPackage ./agda/strict-group-theory-uf.nix {
     inherit groups-uf;
   };
   inverses-agda = agdaPackages-2_6_1.callPackage ./agda/inverses.nix { };
