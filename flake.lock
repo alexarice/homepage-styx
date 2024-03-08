@@ -66,16 +66,16 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1701366566,
-        "narHash": "sha256-B8Jmjld0gGbkVO08GsovVqrUXCs8VfJ8UdM3sjHnzgM=",
+        "lastModified": 1709719888,
+        "narHash": "sha256-3v/hdxv4+Ekk1hZxLxym9sQTI6VhniBLfKj/2DOCyu8=",
         "owner": "agda",
         "repo": "agda",
-        "rev": "4293e0a94d15acac915ab9088b2ec028f78d14a9",
+        "rev": "714c7d2c76c5ffda3180e95c28669259f0dc5b5c",
         "type": "github"
       },
       "original": {
         "owner": "agda",
-        "ref": "v2.6.4.1",
+        "ref": "v2.6.4.3",
         "repo": "agda",
         "type": "github"
       }
@@ -86,16 +86,16 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1709126163,
-        "narHash": "sha256-shi3ylJUPIsEnQOwxaH+vcBEWPAeObbysMMZ3+kZ86s=",
+        "lastModified": 1708167611,
+        "narHash": "sha256-XE/W29HXTWgX1MTIsXR+qcmSV1IRWNIK/zRB6yOD27g=",
         "owner": "agda",
         "repo": "agda",
-        "rev": "89d73f4122e65528aa62e5eac0ff8b9c795b059f",
+        "rev": "df3bacce1f8f3ea18c0be5e58519704a66c3a11e",
         "type": "github"
       },
       "original": {
         "owner": "agda",
-        "ref": "v2.6.4.3-rc1",
+        "ref": "v2.6.4.2-rc2",
         "repo": "agda",
         "type": "github"
       }
@@ -111,11 +111,11 @@
         "nixpkgs": "nixpkgs_6"
       },
       "locked": {
-        "lastModified": 1709306588,
-        "narHash": "sha256-1xNuLMG82f6wygrZJx6FWOE5F2QBKpjztLwcYUF34eU=",
+        "lastModified": 1709726264,
+        "narHash": "sha256-vH/0KRPUD7Ly+hOfNbAjlcFhlMbGAgEhzW4rcmsmsys=",
         "owner": "alexarice",
         "repo": "all-agda",
-        "rev": "d146a7b0ec3f689ce1cefbd549e8c7ee799cc066",
+        "rev": "04c620bcff99eeb7f1b14846e8bef3995c623fa5",
         "type": "github"
       },
       "original": {
@@ -135,11 +135,11 @@
         "nixpkgs": "nixpkgs_7"
       },
       "locked": {
-        "lastModified": 1709575361,
-        "narHash": "sha256-SGoNvOdtOwWmbt5ido9x5dNIVR8PtF/co3taAFqY4Vg=",
+        "lastModified": 1709915070,
+        "narHash": "sha256-OdxB3ox/U9F8PzBz4z5dLFBffIxD3TyR44CfqBQ1e/E=",
         "owner": "alexarice",
         "repo": "catt-agda",
-        "rev": "295938ff78c7c8da0eeae1560a3390df3a9f654e",
+        "rev": "2f7bc3b7a3a114b6b0778ab64a4f567b24e0f788",
         "type": "github"
       },
       "original": {
@@ -228,11 +228,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1701680307,
-        "narHash": "sha256-kAuep2h5ajznlPMD9rnQyffWG8EM/C73lejGofXvdM8=",
+        "lastModified": 1709126324,
+        "narHash": "sha256-q6EQdSeUZOG26WelxqkmR7kArjgWCdw5sfJVHPH/7j8=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "4022d587cbbfd70fe950c1e2083a02621806a725",
+        "rev": "d465f4819400de7c8d874d50b982301f28a84605",
         "type": "github"
       },
       "original": {
@@ -331,10 +331,10 @@
     },
     "nixpkgs_6": {
       "locked": {
-        "lastModified": 1701436327,
-        "narHash": "sha256-tRHbnoNI8SIM5O5xuxOmtSLnswEByzmnQcGGyNRjxsE=",
-        "path": "/nix/store/7adgvk5zdfq4pwrhsm3n9lzypb12gw0g-source",
-        "rev": "91050ea1e57e50388fa87a3302ba12d188ef723a",
+        "lastModified": 1708807242,
+        "narHash": "sha256-sRTRkhMD4delO/hPxxi+XwLqPn8BuUq6nnj4JqLwOu0=",
+        "path": "/nix/store/gzv0nsm8d5js3wzq2mr1sv9lfp1iyail-source",
+        "rev": "73de017ef2d18a04ac4bfd0c02650007ccb31c2a",
         "type": "path"
       },
       "original": {
@@ -357,10 +357,10 @@
     },
     "nixpkgs_8": {
       "locked": {
-        "lastModified": 1708807242,
-        "narHash": "sha256-sRTRkhMD4delO/hPxxi+XwLqPn8BuUq6nnj4JqLwOu0=",
-        "path": "/nix/store/gzv0nsm8d5js3wzq2mr1sv9lfp1iyail-source",
-        "rev": "73de017ef2d18a04ac4bfd0c02650007ccb31c2a",
+        "lastModified": 1709703039,
+        "narHash": "sha256-6hqgQ8OK6gsMu1VtcGKBxKQInRLHtzulDo9Z5jxHEFY=",
+        "path": "/nix/store/gig8j85kj7ybjy3ksn6k3aich8j2k59y-source",
+        "rev": "9df3e30ce24fd28c7b3e2de0d986769db5d6225d",
         "type": "path"
       },
       "original": {
