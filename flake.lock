@@ -135,11 +135,11 @@
         "nixpkgs": "nixpkgs_7"
       },
       "locked": {
-        "lastModified": 1710269343,
-        "narHash": "sha256-RLtanyaZGhWLnZJNypVxpcqGl5fbjyMXgx/Z8/KQ/E4=",
+        "lastModified": 1710339181,
+        "narHash": "sha256-vPUWvbkcZaZ+WQntNu2fCY+67OvCkTP+uRLBuCA7wq4=",
         "owner": "alexarice",
         "repo": "catt-agda",
-        "rev": "8079fc6820e24f33672622985167fca0152717e7",
+        "rev": "1409f735430d0fe8a9051c2455e5e85f1ee15dbb",
         "type": "github"
       },
       "original": {
