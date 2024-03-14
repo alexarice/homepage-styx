@@ -135,11 +135,11 @@
         "nixpkgs": "nixpkgs_7"
       },
       "locked": {
-        "lastModified": 1710339181,
-        "narHash": "sha256-vPUWvbkcZaZ+WQntNu2fCY+67OvCkTP+uRLBuCA7wq4=",
+        "lastModified": 1710422166,
+        "narHash": "sha256-hJ05IsaMIeKgQPML9rolLI4Qh1O8VUowjTe78mFvV5Y=",
         "owner": "alexarice",
         "repo": "catt-agda",
-        "rev": "1409f735430d0fe8a9051c2455e5e85f1ee15dbb",
+        "rev": "0e7f16ed0838e1e10d30f9ce97631306143d0cfb",
         "type": "github"
       },
       "original": {
@@ -357,10 +357,10 @@
     },
     "nixpkgs_8": {
       "locked": {
-        "lastModified": 1709703039,
-        "narHash": "sha256-6hqgQ8OK6gsMu1VtcGKBxKQInRLHtzulDo9Z5jxHEFY=",
-        "path": "/nix/store/gig8j85kj7ybjy3ksn6k3aich8j2k59y-source",
-        "rev": "9df3e30ce24fd28c7b3e2de0d986769db5d6225d",
+        "lastModified": 1710272261,
+        "narHash": "sha256-g0bDwXFmTE7uGDOs9HcJsfLFhH7fOsASbAuOzDC+fhQ=",
+        "path": "/nix/store/k5l01g2zwhysjyl5zjvg5zxnj0lyxpp1-source",
+        "rev": "0ad13a6833440b8e238947e47bea7f11071dc2b2",
         "type": "path"
       },
       "original": {
