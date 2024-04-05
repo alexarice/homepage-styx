@@ -24,6 +24,7 @@ let
   };
   inverses-agda = agdaPackages-2_6_1.callPackage ./agda/inverses.nix { };
   inverses-pdf = callPackage (import ./tex/inverses.nix) { inherit inverses-agda; };
+  thesis = callPackage (import ./tex/thesis.nix) { };
   linear-inf-pdf = callPackage (import ./tex/linear-inf.nix) { };
   inf-category-equivs-pdf = callPackage (import ./tex/inf-category-equivs.nix) { };
   strict-assoc-pdf = callPackage (import ./tex/strict-assoc.nix) { };
@@ -117,6 +118,7 @@ in rec {
     groups-uf.latex
     inverses-agda
     inverses-pdf
+    thesis
     linear-inf-pdf
     inf-category-equivs-pdf
     strict-assoc-pdf
