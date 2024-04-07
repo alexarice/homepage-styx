@@ -1,4 +1,4 @@
-{ stdenv, texlive, fetchFromGitHub }:
+{ stdenv, texlive, fetchFromGitHub, lib }:
 
 stdenv.mkDerivation {
   pname = "thesis";
@@ -8,7 +8,7 @@ stdenv.mkDerivation {
     owner = "alexarice";
     repo = "thesis";
     rev = "master";
-    hash = "sha256-W3W9M2+B/Oy8BX2HeCkRkYGWbVJMt4NSIdDwjD9jgBo=";
+    hash = "sha256-Adxnu5Ly0iy2PEIRqxE+anKRMFDhw8RssmaI7wvRNFc=";
   };
 
   buildInputs = [ texlive.combined.scheme-full ];
