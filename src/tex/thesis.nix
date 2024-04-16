@@ -8,7 +8,7 @@ stdenv.mkDerivation {
     owner = "alexarice";
     repo = "thesis";
     rev = "master";
-    hash = "sha256-hSjoVvJWE5jDXNApcbvG/seKEeYjnxKl/y1iEUff6oA=";
+    hash = "sha256-QAj78GLFiyMaypuXcvpAUcmGv0/00h0TPPSE+TQ3iNM=";
   };
 
   FONTCONFIG_FILE = makeFontsConf {
