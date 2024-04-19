@@ -26,6 +26,9 @@ Algebra, Logic, ZFC Set Theory, and Representation Theory.
 I also enjoy formalising things in Agda and and am a user of Emacs and the NixOS Linux
 distribution.
 
+## Thesis
+My thesis "A type-theoretic approach to semistrict higher categories", was submitted on 18th April 2024 ([pdf](pub/thesis.pdf))
+
 ## Papers
 
 - Strictly Associative and Unital ∞-Categories as a Generalized Algebraic Theory ([pdf](pub/strict-unit-assoc.pdf), [arxiv](https://arxiv.org/abs/2302.05303))
