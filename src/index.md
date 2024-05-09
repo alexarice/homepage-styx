@@ -1,30 +1,28 @@
-
 <img class="photo" src="rice.jpg" width="200" title="Photo Credit: George Kaye">
 
-I am studying at the University of Cambridge after completing the first year of my PhD at the University of Birmingham. I am
-working under the supervision of [Jamie Vicary](https://www.cl.cam.ac.uk/~jv258/).
+I am currently a postdoctoral research assistant working with [Chris Heunen](https://homepages.inf.ed.ac.uk/cheunen/) and [Tobias Grosser](https://grosser.science/) on the intersection of programming languages, compilation, and quantum computing. I have just submitted my thesis for a PhD at the University of Cambridge under the supervision of [Jamie Vicary](https://www.cl.cam.ac.uk/~jv258/).
 
 ## Contact
 
 | - | - |
-Email          | alex.rice at cl.cam.ac.uk
-Office Address | Office FS35 <br> The Computer Laboratory <br> University of Cambridge <br> William Gates Building <br> Cambridge <br> CB3 0FD <br> United Kingdom
+Email          | alex.rice at ed.ac.uk
+Office Address | Office SE01 <br> The Computer Laboratory <br> University of Cambridge <br> William Gates Building <br> Cambridge <br> CB3 0FD <br> United Kingdom
 GitHub         | [https://github.com/alexarice](https://github.com/alexarice)
 
 ## About Me
 
-My main interests at the moment are type theory, including Homotopy Type Theory, and its applications to higher category theory. I am currently looking at
-various definitions of globular higher categories and am thinking
-about semi-strictness problems and types of composition.
+I am generally interested at the moment in all things related to
+programming languages and type systems, and tools for working with
+these. In my PhD, I developed two variants of the type theory Catt, a
+type theory which models globular weak infinity categories. These
+variants had added definitional equality allowing them to model
+semistrict infinity categories. During this I generated an interpreter
+for these languages, and formalised a substantial portion of their
+metatheory in Agda.
 
-Before starting my PhD I completed a 4-year integrated masters program
-in Mathematics and Computer Science at the University of Oxford.
-During this time I took courses including Category Theory (including
-theory of monoidal categories), Algebraic Topology, Homological
-Algebra, Logic, ZFC Set Theory, and Representation Theory.
-
-I also enjoy formalising things in Agda and and am a user of Emacs and the NixOS Linux
-distribution.
+I also enjoy formalising things in Agda, programming in rust, and am a
+user of Emacs and the NixOS Linux distribution. My other interests
+include ice skating/ice hockey and playing cello in orchestras.
 
 ## Thesis
 My thesis "A type-theoretic approach to semistrict higher categories", was submitted on 18th April 2024 ([pdf](pub/thesis.pdf))
