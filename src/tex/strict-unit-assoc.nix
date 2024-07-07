@@ -6,18 +6,24 @@ stdenv.mkDerivation {
 
   src = builtins.fetchGit {
     url = "git@github.com:alexarice/strict-unit-assoc.git";
-    rev = "14c5d3136dd891244a29c5142ad8c255e2e3c109";
+    rev = "8b4f92f7658eebf007f576847ae92322d37a6f38";
     ref = "master";
   };
 
   buildInputs = [ texlive.combined.scheme-full ];
 
   buildPhase = ''
+    export HOME=$(pwd)
     latexmk -pdf arxiv.tex
+    cd talk
+    latexmk -pdf talk.tex
+    cd ..
   '';
 
   installPhase = ''
     mkdir -p $out/pub
-    cp arxiv.pdf $out/pub/strict-unit-assoc.pdf
+    mkdir -p $out/talks
+    cp arxiv.pdf $out/pub/sua.pdf
+    cp talk/talk.pdf $out/talks/sua.pdf
   '';
 }
