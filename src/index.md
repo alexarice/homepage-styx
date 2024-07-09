@@ -29,7 +29,7 @@ My thesis "A type-theoretic approach to semistrict higher categories", was submi
 
 ## Papers
 
-- A Syntax for Strictly Associative and Unital ∞-Categories ([pdf](pub/sua.pdf), [arxiv](https://arxiv.org/abs/2302.05303))
+- A Syntax for Strictly Associative and Unital ∞-Categories ([pdf](pub/sua.pdf), [arxiv](https://arxiv.org/abs/2302.05303), [doi](https://dl.acm.org/doi/10.1145/3661814.3662102))
 - A Type Theory for Strictly Unital Infinity Categories ([pdf](pub/strict-units.pdf), [arxiv](https://arxiv.org/abs/2007.08307), [doi](https://dl.acm.org/doi/10.1145/3531130.3533363))
 - A Type Theory for Strictly Associative Infinity Categories ([pdf](pub/strict-assoc.pdf), [arxiv](https://arxiv.org/abs/2109.01513))
 - New minimal linear inferences in Boolean logic independent of switch and medial, Extended version in LMCS ([pdf](papers/lin-inf-extended.pdf), [arxiv](https://arxiv.org/abs/2111.05209), [lmcs](https://lmcs.episciences.org/11337)), originally presented at FSCD 2021 ([pdf](pub/linear-inf.pdf), [link](https://drops.dagstuhl.de/opus/volltexte/2021/14252/))

@@ -6,7 +6,7 @@ stdenv.mkDerivation {
 
   src = builtins.fetchGit {
     url = "git@github.com:alexarice/strict-unit-assoc.git";
-    rev = "8b4f92f7658eebf007f576847ae92322d37a6f38";
+    rev = "9839293a4157f66d684cab2db51b2e36d031ba4f";
     ref = "master";
   };
 
