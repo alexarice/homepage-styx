@@ -1,4 +1,4 @@
-{ stdenv, texlive, fetchFromGitHub, lib, nerdfonts, makeFontsConf }:
+{ stdenv, texlive, fetchFromGitHub, lib, nerdfonts, makeFontsConf, libfaketime }:
 
 stdenv.mkDerivation {
   pname = "thesis";
@@ -8,20 +8,20 @@ stdenv.mkDerivation {
     owner = "alexarice";
     repo = "thesis";
     rev = "master";
-    hash = "sha256-DL078mBGmxKHTnBYG6Y1/9FtTrWTsbrPBnPm8NMh+zA=";
+    hash = "sha256-IpJh5BRbQpxupic7bEk2J12cZ6ovdlY9wfK0jTtNG3U=";
   };
 
   FONTCONFIG_FILE = makeFontsConf {
     fontDirectories = [ (nerdfonts.override { fonts = [ "Hack" ]; }) ];
   };
 
-  buildInputs = [ texlive.combined.scheme-full ];
+  buildInputs = [ texlive.combined.scheme-full libfaketime ];
 
   buildPhase = ''
-    xelatex thesis.tex
-    biber thesis
-    xelatex thesis.tex
-    xelatex thesis.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' xelatex thesis.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' biber thesis
+    faketime -f '@1980-01-01 00:00:00 x0.001' xelatex thesis.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' xelatex thesis.tex
   '';
 
   installPhase = ''

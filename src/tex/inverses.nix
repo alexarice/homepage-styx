@@ -1,16 +1,16 @@
-{ stdenv, texlive, inverses-agda }:
+{ stdenv, texlive, inverses-agda, libfaketime }:
 
 stdenv.mkDerivation {
   pname = "inverses-pdf";
 
   inherit (inverses-agda) src version;
 
-  buildInputs = [ texlive.combined.scheme-full ];
+  buildInputs = [ texlive.combined.scheme-full libfaketime ];
 
   buildPhase = ''
-    latexmk -pdf inverses.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' latexmk -pdf inverses.tex
     cd talk
-    latexmk -pdf inverses_talk.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' latexmk -pdf inverses_talk.tex
     cd ..
   '';
 

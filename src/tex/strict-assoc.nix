@@ -1,4 +1,4 @@
-{ stdenv, texlive }:
+{ stdenv, texlive, libfaketime }:
 
 stdenv.mkDerivation {
   pname = "strict-assoc-pdf";
@@ -9,12 +9,12 @@ stdenv.mkDerivation {
     rev = "67dc9305332024755c67eb4d0b19a1d79fd1676c";
   };
 
-  buildInputs = [ texlive.combined.scheme-full ];
+  buildInputs = [ texlive.combined.scheme-full libfaketime ];
 
   buildPhase = ''
-    latexmk -pdf strict-assoc.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' latexmk -pdf strict-assoc.tex
     cd talk
-    latexmk -pdf talk.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' latexmk -pdf talk.tex
     cd ..
   '';
 

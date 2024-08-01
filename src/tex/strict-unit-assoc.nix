@@ -1,4 +1,4 @@
-{ stdenv, texlive }:
+{ stdenv, texlive, libfaketime }:
 
 stdenv.mkDerivation {
   pname = "strict-unit-assoc-pdf";
@@ -10,13 +10,13 @@ stdenv.mkDerivation {
     ref = "master";
   };
 
-  buildInputs = [ texlive.combined.scheme-full ];
+  buildInputs = [ texlive.combined.scheme-full libfaketime ];
 
   buildPhase = ''
     export HOME=$(pwd)
-    latexmk -pdf arxiv.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' latexmk -pdf arxiv.tex
     cd talk
-    latexmk -pdf talk.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' latexmk -pdf talk.tex
     cd ..
   '';
 

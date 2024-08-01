@@ -1,4 +1,4 @@
-{ stdenv, texlive }:
+{ stdenv, texlive, libfaketime }:
 
 stdenv.mkDerivation {
   pname = "linear-inf-pdf";
@@ -9,12 +9,12 @@ stdenv.mkDerivation {
     rev = "29416b5bfd122b1cc8e92ea78e7bc1ff5853f8ca";
   };
 
-  buildInputs = [ texlive.combined.scheme-full ];
+  buildInputs = [ texlive.combined.scheme-full libfaketime ];
 
   buildPhase = ''
-    latexmk -pdf linear-inf
+    faketime -f '@1980-01-01 00:00:00 x0.001' latexmk -pdf linear-inf
     cd talk
-    latexmk -pdf talk.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' latexmk -pdf talk.tex
     cd ..
   '';
 

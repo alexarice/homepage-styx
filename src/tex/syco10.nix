@@ -1,4 +1,4 @@
-{ stdenv, texlive }:
+{ stdenv, texlive, libfaketime }:
 
 stdenv.mkDerivation {
   pname = "syco10-pdf";
@@ -10,10 +10,10 @@ stdenv.mkDerivation {
     ref = "main";
   };
 
-  buildInputs = [ texlive.combined.scheme-full ];
+  buildInputs = [ texlive.combined.scheme-full libfaketime ];
 
   buildPhase = ''
-    latexmk -pdf talk.tex
+    faketime -f '@1980-01-01 00:00:00 x0.001' latexmk -pdf talk.tex
   '';
 
   installPhase = ''
