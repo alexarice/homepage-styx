@@ -6,7 +6,7 @@ I am currently a postdoctoral research assistant working with [Chris Heunen](htt
 
 | - | - |
 Email          | alex.rice at ed.ac.uk
-Office Address | Office SE01 <br> The Computer Laboratory <br> University of Cambridge <br> William Gates Building <br> Cambridge <br> CB3 0FD <br> United Kingdom
+Office Address | Office 3.05 <br> Informatics Forum <br> University of Edinburgh <br> Edinburgh <br> EH8 9AB <br> United Kingdom
 GitHub         | [https://github.com/alexarice](https://github.com/alexarice)
 
 ## About Me
