@@ -8,6 +8,7 @@ I am currently a postdoctoral research assistant working with [Chris Heunen](htt
 Email          | alex.rice at ed.ac.uk
 Office Address | Office 3.05 <br> Informatics Forum <br> University of Edinburgh <br> Edinburgh <br> EH8 9AB <br> United Kingdom
 GitHub         | [https://github.com/alexarice](https://github.com/alexarice)
+Orcid          | [0000-0002-2698-5122](https://orcid.org/0000-0002-2698-5122)
 
 ## About Me
 

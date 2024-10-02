@@ -31,7 +31,7 @@
 
       packages.site = (pkgs.callPackage (import ./src/site.nix) {
         agdaPackages-2_6_1 = all-agda.legacyPackages."x86_64-linux".agdaPackages-2_6_1;
-        agdaPackages-2_6_4 = all-agda.legacyPackages."x86_64-linux".agdaPackages-2_6_4.overrideScope' (self: super: {
+        agdaPackages-2_6_4 = all-agda.legacyPackages."x86_64-linux".agdaPackages-2_6_4.overrideScope (self: super: {
           catt-agda = catt-agda.packages.${system}.catt-agda;
         });
         styx = styx.defaultPackage."x86_64-linux";
