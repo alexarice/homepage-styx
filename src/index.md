@@ -69,6 +69,9 @@ My thesis "A type-theoretic approach to semistrict higher categories", was submi
 
 I have attended the following events:
 
+- [SPLS 6th Nov](https://spli.scot/spls/meetings/2024/november/)
+- [CATNIP 4th meeting](https://sites.google.com/view/catniporg/meetings)
+- [LICS 2024](https://lics.siglog.org/lics24/)
 - [HoTT/UF 2023](https://hott-uf.github.io/2023/)
 - [SYCO 11](https://cl.cam.ac.uk/syco/11)
 - [SYCO 10](https://cl.cam.ac.uk/syco/10)
