@@ -26,7 +26,7 @@ user of Emacs and the NixOS Linux distribution. My other interests
 include ice skating/ice hockey and playing cello in orchestras.
 
 ## Thesis
-My thesis "A type-theoretic approach to semistrict higher categories", was submitted on 18th April 2024 ([pdf](pub/thesis.pdf))
+My thesis "A type-theoretic approach to semistrict higher categories", was submitted on 18th April 2024 ([pdf](pub/thesis.pdf), [arxiv](https://arxiv.org/abs/2502.17068))
 
 ## Papers
 

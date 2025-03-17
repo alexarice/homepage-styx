@@ -1,4 +1,4 @@
-{ stdenv, texlive, fetchFromGitHub, lib, nerdfonts, makeFontsConf, libfaketime }:
+{ stdenv, texlive, fetchFromGitHub, lib, nerd-fonts, makeFontsConf, libfaketime }:
 
 stdenv.mkDerivation {
   pname = "thesis";
@@ -7,12 +7,12 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "alexarice";
     repo = "thesis";
-    rev = "master";
-    hash = "sha256-IpJh5BRbQpxupic7bEk2J12cZ6ovdlY9wfK0jTtNG3U=";
+    rev = "48d4528a17da592610d10002eefe570a4d12aab2";
+    hash = "sha256-ixJkqacxXNhriNNl+zm1gC7cfvAj8fxyeja7X2tKbUE=";
   };
 
   FONTCONFIG_FILE = makeFontsConf {
-    fontDirectories = [ (nerdfonts.override { fonts = [ "Hack" ]; }) ];
+    fontDirectories = [ nerd-fonts.hack ];
   };
 
   buildInputs = [ texlive.combined.scheme-full libfaketime ];
