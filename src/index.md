@@ -71,6 +71,7 @@ My thesis "A type-theoretic approach to semistrict higher categories", was submi
 
 I have attended the following events:
 
+- [EuroLLVM 2025](https://llvm.swoogo.com/2025eurollvm/home)
 - [SPLS 6th Nov](https://spli.scot/spls/meetings/2024/november/)
 - [CATNIP 4th meeting](https://sites.google.com/view/catniporg/meetings)
 - [LICS 2024](https://lics.siglog.org/lics24/)
