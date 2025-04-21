@@ -12,6 +12,7 @@
 , styxLib
 , styx-themes
 , pkgs
+, eurollvm
 }:
 
 let
@@ -34,7 +35,7 @@ let
   strict-units-pdf = callPackage (import ./tex/strict-units.nix) { };
   catt-agda = agdaPackages-2_6_4.callPackage (import ./agda/catt-agda.nix) { };
   syllepsis = agdaPackages-2_6_4.callPackage (import ./agda/syllepsis.nix) { };
-  inherit (builtins) readFile;
+  eurollvm-pdf = callPackage (import ./typst/eurollvm.nix) { inherit eurollvm; };
 in rec {
 
   themes = [
@@ -124,6 +125,7 @@ in rec {
     strict-assoc-pdf
     semistrict-pdf
     syco10-pdf
+    eurollvm-pdf
     strict-units-pdf
     strict-unit-assoc-pdf
     catt-agda

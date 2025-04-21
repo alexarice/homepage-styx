@@ -38,6 +38,8 @@ My thesis "A type-theoretic approach to semistrict higher categories", was submi
 
 ## Talks
 
+- April 2025: sd-visualiser: Interactive graph visualisation for SSA-based IRs, EuroLLVM 2025 ([slides](talks/sd-talk.pdf))
+- April 2025: Defining and verifying MLIR operation with constraints, EuroLLVM 2025 ([slides](talks/mlir-ops.pdf))
 - July 2024: A Syntax for Strictly Associative and Unital ∞-Categories, LICS 2024 ([slides](talks/sua.pdf))
 - April 2023: Strictly Associative Group Theory using Univalence, HoTT/UF 2023 ([slides](talks/sgtuf.pdf))
 - December 2022: A Type Theory for Strictly Associative Infinity Categories, SYCO 10 ([slides](talks/syco10.pdf))

@@ -169,6 +169,26 @@
         "type": "github"
       }
     },
+    "eurollvm": {
+      "inputs": {
+        "flake-utils": "flake-utils_6",
+        "nixpkgs": "nixpkgs_9",
+        "typix": "typix"
+      },
+      "locked": {
+        "lastModified": 1745221144,
+        "narHash": "sha256-cnHHzsiBDwFSWUf8MxEOzGSiwW2zPs7ztAo0fJFjraI=",
+        "ref": "refs/heads/main",
+        "rev": "84b7bd75296116821fa1c0c23ea944354d96e5bf",
+        "revCount": 3,
+        "type": "git",
+        "url": "ssh://git@github.com/alexarice/eurollvm"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/alexarice/eurollvm"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -301,6 +321,24 @@
         "type": "github"
       }
     },
+    "flake-utils_7": {
+      "inputs": {
+        "systems": "systems_3"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1628427995,
@@ -349,6 +387,19 @@
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
+      }
+    },
+    "nixpkgs_10": {
+      "locked": {
+        "lastModified": 1743583204,
+        "narHash": "sha256-F7n4+KOIfWrwoQjXrL2wD9RhFYLs2/GGe/MQY1sSdlE=",
+        "path": "/nix/store/fwhfa9pbx8vdi8nd5pcys665baz6xdxf-source",
+        "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
       }
     },
     "nixpkgs_2": {
@@ -453,15 +504,18 @@
     },
     "nixpkgs_9": {
       "locked": {
-        "lastModified": 1740367490,
-        "narHash": "sha256-WGaHVAjcrv+Cun7zPlI41SerRtfknGQap281+AakSAw=",
-        "path": "/nix/store/593xvgv994xlkm5mb7w4p1xxnzrs9wv6-source",
-        "rev": "0196c0175e9191c474c26ab5548db27ef5d34b05",
-        "type": "path"
+        "lastModified": 1744932701,
+        "narHash": "sha256-fusHbZCyv126cyArUwwKrLdCkgVAIaa/fQJYFlCEqiU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b024ced1aac25639f8ca8fdfc2f8c4fbd66c48ef",
+        "type": "github"
       },
       "original": {
-        "id": "nixpkgs",
-        "type": "indirect"
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     },
     "nixpkgsold": {
@@ -484,8 +538,9 @@
       "inputs": {
         "all-agda": "all-agda",
         "catt-agda": "catt-agda",
-        "flake-utils": "flake-utils_6",
-        "nixpkgs": "nixpkgs_9",
+        "eurollvm": "eurollvm",
+        "flake-utils": "flake-utils_7",
+        "nixpkgs": "nixpkgs_10",
         "nixpkgsold": "nixpkgsold",
         "styx": "styx"
       }
@@ -539,6 +594,42 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_3": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "typix": {
+      "inputs": {
+        "nixpkgs": [
+          "eurollvm",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1744015615,
+        "narHash": "sha256-NdAEJ/WpP3hC/R4hWif2rrrRQtlHNBr7y7pAy0A+8s4=",
+        "owner": "loqusion",
+        "repo": "typix",
+        "rev": "e1107d63ecfb53e09c7e50f466e1167b13df3b72",
+        "type": "github"
+      },
+      "original": {
+        "owner": "loqusion",
+        "repo": "typix",
         "type": "github"
       }
     },
