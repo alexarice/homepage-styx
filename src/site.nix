@@ -36,6 +36,7 @@ let
   catt-agda = agdaPackages-2_6_4.callPackage (import ./agda/catt-agda.nix) { };
   syllepsis = agdaPackages-2_6_4.callPackage (import ./agda/syllepsis.nix) { };
   eurollvm-pdf = callPackage (import ./typst/eurollvm.nix) { inherit eurollvm; };
+  dynamic-gate-pdf = callPackage (import ./tex/dynamic-gate) { };
 in rec {
 
   themes = [
@@ -129,6 +130,7 @@ in rec {
     strict-units-pdf
     strict-unit-assoc-pdf
     catt-agda
+    dynamic-gate-pdf
   ];
 
   /* Generating the site
