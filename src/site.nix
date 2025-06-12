@@ -13,6 +13,7 @@
 , styx-themes
 , pkgs
 , eurollvm
+, catt-nbe
 }:
 
 let
@@ -37,6 +38,7 @@ let
   syllepsis = agdaPackages-2_6_4.callPackage (import ./agda/syllepsis.nix) { };
   eurollvm-pdf = callPackage (import ./typst/eurollvm.nix) { inherit eurollvm; };
   dynamic-gate-pdf = callPackage (import ./tex/dynamic-gate) { };
+  catt-nbe-pdf = callPackage (import ./typst/catt-nbe.nix) { inherit catt-nbe; };
 in rec {
 
   themes = [
@@ -131,6 +133,7 @@ in rec {
     strict-unit-assoc-pdf
     catt-agda
     dynamic-gate-pdf
+    catt-nbe-pdf
   ];
 
   /* Generating the site

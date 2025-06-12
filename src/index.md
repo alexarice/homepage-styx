@@ -38,6 +38,7 @@ My thesis "A type-theoretic approach to semistrict higher categories", was submi
 
 ## Talks
 
+- June 2025: Implementing a Typechecker for an Esoteric Language: Experiences, Challenges, and Lessons, TYPES 2025 ([slides](talks/catt-nbe.pdf))
 - April 2025: sd-visualiser: Interactive graph visualisation for SSA-based IRs, EuroLLVM 2025 ([slides](talks/sd-talk.pdf))
 - April 2025: Defining and verifying MLIR operation with constraints, EuroLLVM 2025 ([slides](talks/mlir-ops.pdf))
 - July 2024: A Syntax for Strictly Associative and Unital ∞-Categories, LICS 2024 ([slides](talks/sua.pdf))
@@ -71,6 +72,8 @@ My thesis "A type-theoretic approach to semistrict higher categories", was submi
 
 I have attended the following events:
 
+- [TYPES 2025](https://msp.cis.strath.ac.uk/types2025/)
+- [SPLS 4th June](https://spli.scot/spls/meetings/2025/june/)
 - [EuroLLVM 2025](https://llvm.swoogo.com/2025eurollvm/home)
 - [SPLS 6th Nov](https://spli.scot/spls/meetings/2024/november/)
 - [CATNIP 4th meeting](https://sites.google.com/view/catniporg/meetings)
