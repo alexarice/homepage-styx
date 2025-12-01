@@ -6,7 +6,7 @@ stdenv.mkDerivation {
 
   src = fetchGit {
     url = "git@github.com:alexarice/dyn-gate-paper.git";
-    rev = "22cdffcf52fe04d2359e74e69efb9a3c2e51efae";
+    rev = "52e9819c86d3df646332ca94eca37e5d6be5b413";
     ref = "main";
   };
 

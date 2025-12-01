@@ -6,7 +6,7 @@ stdenv.mkDerivation {
 
   src = builtins.fetchGit {
     url = "ssh://git@github.com/alexarice/strict-assoc.git";
-    rev = "67dc9305332024755c67eb4d0b19a1d79fd1676c";
+    rev = "ebdf524e2d64a6ddffd4bbc20da27c9140572507";
   };
 
   buildInputs = [ texlive.combined.scheme-full libfaketime ];

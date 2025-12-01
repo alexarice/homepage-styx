@@ -7,8 +7,8 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "alexarice";
     repo = "thesis";
-    rev = "48d4528a17da592610d10002eefe570a4d12aab2";
-    hash = "sha256-ixJkqacxXNhriNNl+zm1gC7cfvAj8fxyeja7X2tKbUE=";
+    rev = "5d2e6154e92b60d0db9a29f4be8451a386301677";
+    hash = "sha256-GzOH4h1e0VQ9ky05HB63vP97pR83DzOa93netq+WZs4=";
   };
 
   FONTCONFIG_FILE = makeFontsConf {

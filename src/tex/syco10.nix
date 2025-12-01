@@ -6,7 +6,7 @@ stdenv.mkDerivation {
 
   src = fetchGit {
     url = "ssh://git@github.com/alexarice/SYCO-10-talk.git";
-    rev = "4823139965439049ffe096e4406b8ac61167d2bb";
+    rev = "5d0fd14b0e64be36a91cb92cfcd9d4832dac6d5f";
     ref = "main";
   };
 
