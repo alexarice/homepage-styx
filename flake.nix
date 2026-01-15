@@ -16,9 +16,11 @@
     };
     eurollvm.url = "git+ssh://git@github.com/alexarice/eurollvm";
     catt-nbe.url = "git+ssh://git@github.com/alexarice/catt-nbe";
+    popl-talk.url = "git+ssh://git@github.com/alexarice/popl-talk";
+    planqc.url = "git+ssh://git@github.com/alexarice/planqc-mutable";
   };
 
-  outputs = { self, nixpkgs, all-agda, styx, flake-utils, nixpkgsold, catt-agda, eurollvm, catt-nbe }:
+  outputs = { self, nixpkgs, all-agda, styx, flake-utils, nixpkgsold, catt-agda, eurollvm, catt-nbe, popl-talk, planqc }:
     flake-utils.lib.eachDefaultSystem (system:
     let
       pkgs = import nixpkgs {
@@ -36,7 +38,7 @@
         agdaPackages-2_6_4 = all-agda.legacyPackages."x86_64-linux".agdaPackages-2_6_4.overrideScope (self: super: {
           catt-agda = catt-agda.packages.${system}.catt-agda;
         });
-        inherit eurollvm catt-nbe;
+        inherit eurollvm catt-nbe popl-talk planqc;
         styx = styx.defaultPackage."x86_64-linux";
         styxLib = styx.lib.x86_64-linux;
         styx-themes = styx.themes.x86_64-linux;

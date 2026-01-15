@@ -30,14 +30,20 @@ My thesis "A type-theoretic approach to semistrict higher categories", was submi
 
 ## Papers
 
+- Quantum Circuits are Just a Phase ([pdf](pub/phase.pdf), [arxiv](https://arxiv.org/abs/2507.11676), [doi](https://dl.acm.org/doi/10.1145/3776731))
 - A Syntax for Strictly Associative and Unital ∞-Categories ([pdf](pub/sua.pdf), [arxiv](https://arxiv.org/abs/2302.05303), [doi](https://dl.acm.org/doi/10.1145/3661814.3662102))
 - A Type Theory for Strictly Unital Infinity Categories ([pdf](pub/strict-units.pdf), [arxiv](https://arxiv.org/abs/2007.08307), [doi](https://dl.acm.org/doi/10.1145/3531130.3533363))
 - A Type Theory for Strictly Associative Infinity Categories ([pdf](pub/strict-assoc.pdf), [arxiv](https://arxiv.org/abs/2109.01513))
 - New minimal linear inferences in Boolean logic independent of switch and medial, Extended version in LMCS ([pdf](papers/lin-inf-extended.pdf), [arxiv](https://arxiv.org/abs/2111.05209), [lmcs](https://lmcs.episciences.org/11337)), originally presented at FSCD 2021 ([pdf](pub/linear-inf.pdf), [link](https://drops.dagstuhl.de/opus/volltexte/2021/14252/))
 - Coinductive Invertibility in Higher Categories ([pdf](pub/inverses.pdf), [formalisation](pub/inverses/Everything.html), [github](https://github.com/alexarice/Inverses), [arxiv](https://arxiv.org/abs/2008.10307))
 
+## Posters
+
+- Mutability in Quantum Programming, PlanQC 2026 ([poster](poster/mutable.pdf), [abstract](pub/mutable.pdf))
+
 ## Talks
 
+- January 2026: Quantum Circuits are Just a Phase, POPL 2026 ([slides](talks/phase.pdf))
 - June 2025: Implementing a Typechecker for an Esoteric Language: Experiences, Challenges, and Lessons, TYPES 2025 ([slides](talks/catt-nbe.pdf))
 - April 2025: sd-visualiser: Interactive graph visualisation for SSA-based IRs, EuroLLVM 2025 ([slides](talks/sd-talk.pdf))
 - April 2025: Defining and verifying MLIR operation with constraints, EuroLLVM 2025 ([slides](talks/mlir-ops.pdf))
@@ -72,6 +78,8 @@ My thesis "A type-theoretic approach to semistrict higher categories", was submi
 
 I have attended the following events:
 
+- [POPL 2026](https://popl26.sigplan.org/)
+- [PlanQC 2026](https://popl26.sigplan.org/home/planqc-2026)
 - [TYPES 2025](https://msp.cis.strath.ac.uk/types2025/)
 - [SPLS 4th June](https://spli.scot/spls/meetings/2025/june/)
 - [EuroLLVM 2025](https://llvm.swoogo.com/2025eurollvm/home)

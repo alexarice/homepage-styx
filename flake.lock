@@ -260,6 +260,24 @@
         "type": "github"
       }
     },
+    "flake-utils_10": {
+      "inputs": {
+        "systems": "systems_6"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "flake-utils_2": {
       "locked": {
         "lastModified": 1623875721,
@@ -377,6 +395,24 @@
         "type": "github"
       }
     },
+    "flake-utils_9": {
+      "inputs": {
+        "systems": "systems_5"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1628427995,
@@ -455,6 +491,38 @@
       "original": {
         "id": "nixpkgs",
         "type": "indirect"
+      }
+    },
+    "nixpkgs_12": {
+      "locked": {
+        "lastModified": 1768305791,
+        "narHash": "sha256-AIdl6WAn9aymeaH/NvBj0H9qM+XuAuYbGMZaP0zcXAQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "1412caf7bf9e660f2f962917c14b1ea1c3bc695e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_13": {
+      "locked": {
+        "lastModified": 1768305791,
+        "narHash": "sha256-AIdl6WAn9aymeaH/NvBj0H9qM+XuAuYbGMZaP0zcXAQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "1412caf7bf9e660f2f962917c14b1ea1c3bc695e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     },
     "nixpkgs_2": {
@@ -590,6 +658,46 @@
         "type": "github"
       }
     },
+    "planqc": {
+      "inputs": {
+        "flake-utils": "flake-utils_9",
+        "nixpkgs": "nixpkgs_12",
+        "typix": "typix_3"
+      },
+      "locked": {
+        "lastModified": 1768516552,
+        "narHash": "sha256-vsZ0qFgYZFEXbhu/f3U/8RT2nVW+9AfFd0OwbsV+w4U=",
+        "ref": "refs/heads/main",
+        "rev": "cf3311ddb8eb3b13cf27e56661ffaa2f1956dd02",
+        "revCount": 6,
+        "type": "git",
+        "url": "ssh://git@github.com/alexarice/planqc-mutable"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/alexarice/planqc-mutable"
+      }
+    },
+    "popl-talk": {
+      "inputs": {
+        "flake-utils": "flake-utils_10",
+        "nixpkgs": "nixpkgs_13",
+        "typix": "typix_4"
+      },
+      "locked": {
+        "lastModified": 1768512635,
+        "narHash": "sha256-R2HJMv6DtHwbD6c+fdXj12i1OFkxhkNxRX+DaGl1Ej0=",
+        "ref": "refs/heads/main",
+        "rev": "bd8b98da57062299fef3024459ca831e2e4b30f6",
+        "revCount": 5,
+        "type": "git",
+        "url": "ssh://git@github.com/alexarice/popl-talk"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/alexarice/popl-talk"
+      }
+    },
     "root": {
       "inputs": {
         "all-agda": "all-agda",
@@ -599,6 +707,8 @@
         "flake-utils": "flake-utils_8",
         "nixpkgs": "nixpkgs_11",
         "nixpkgsold": "nixpkgsold",
+        "planqc": "planqc",
+        "popl-talk": "popl-talk",
         "styx": "styx"
       }
     },
@@ -684,6 +794,36 @@
         "type": "github"
       }
     },
+    "systems_5": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_6": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
     "typix": {
       "inputs": {
         "nixpkgs": [
@@ -718,6 +858,48 @@
         "owner": "loqusion",
         "repo": "typix",
         "rev": "e1107d63ecfb53e09c7e50f466e1167b13df3b72",
+        "type": "github"
+      },
+      "original": {
+        "owner": "loqusion",
+        "repo": "typix",
+        "type": "github"
+      }
+    },
+    "typix_3": {
+      "inputs": {
+        "nixpkgs": [
+          "planqc",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1768177233,
+        "narHash": "sha256-ejoA5SCsPKrxMubO/1DOXNbB+7kronXMPBuDAiS6HSE=",
+        "owner": "loqusion",
+        "repo": "typix",
+        "rev": "eb3f967969b661563a2ccdda3b828e903a064f9b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "loqusion",
+        "repo": "typix",
+        "type": "github"
+      }
+    },
+    "typix_4": {
+      "inputs": {
+        "nixpkgs": [
+          "popl-talk",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1768177233,
+        "narHash": "sha256-ejoA5SCsPKrxMubO/1DOXNbB+7kronXMPBuDAiS6HSE=",
+        "owner": "loqusion",
+        "repo": "typix",
+        "rev": "eb3f967969b661563a2ccdda3b828e903a064f9b",
         "type": "github"
       },
       "original": {

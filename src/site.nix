@@ -14,6 +14,8 @@
 , pkgs
 , eurollvm
 , catt-nbe
+, popl-talk
+, planqc
 }:
 
 let
@@ -39,6 +41,10 @@ let
   eurollvm-pdf = callPackage (import ./typst/eurollvm.nix) { inherit eurollvm; };
   dynamic-gate-pdf = callPackage (import ./tex/dynamic-gate) { };
   catt-nbe-pdf = callPackage (import ./typst/catt-nbe.nix) { inherit catt-nbe; };
+  phase-pdf = callPackage (import ./tex/phase.nix) { };
+  phase-talk = callPackage (import ./typst/phase-talk.nix) { inherit popl-talk; };
+  mutable-abstract = callPackage (import ./tex/mutable.nix) { inherit planqc; };
+  mutable-poster = callPackage (import ./typst/mutable.nix) { inherit planqc; };
 in rec {
 
   themes = [
@@ -134,6 +140,10 @@ in rec {
     catt-agda
     dynamic-gate-pdf
     catt-nbe-pdf
+    phase-pdf
+    phase-talk
+    mutable-abstract
+    mutable-poster
   ];
 
   /* Generating the site
