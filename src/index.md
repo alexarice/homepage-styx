@@ -1,6 +1,12 @@
 <img class="photo" src="rice.jpg" width="200" title="Photo Credit: George Kaye">
 
-I am currently a postdoctoral research assistant working with [Chris Heunen](https://homepages.inf.ed.ac.uk/cheunen/) and [Tobias Grosser](https://grosser.science/) on the intersection of programming languages, compilation, and quantum computing. I have just submitted my thesis for a PhD at the University of Cambridge under the supervision of [Jamie Vicary](https://www.cl.cam.ac.uk/~jv258/).
+I am currently a postdoctoral research assistant working with [Chris
+Heunen](https://homepages.inf.ed.ac.uk/cheunen/) on methods of
+representing quantum programs which makes them easier to optimise,
+write, or reason about. I have previously worked with [Tobias
+Grosser](https://grosser.science/), and did my PhD at the University
+of Cambridge under the supervision of [Jamie
+Vicary](https://www.cl.cam.ac.uk/~jv258/).
 
 ## Contact
 
@@ -80,6 +86,8 @@ I have attended the following events:
 
 - [POPL 2026](https://popl26.sigplan.org/)
 - [PlanQC 2026](https://popl26.sigplan.org/home/planqc-2026)
+- [SPLS 3rd December](https://spli.scot/spls/meetings/2025/december/)
+- [CATNIP 7th meeting](https://sites.google.com/view/catniporg/meetings)
 - [TYPES 2025](https://msp.cis.strath.ac.uk/types2025/)
 - [SPLS 4th June](https://spli.scot/spls/meetings/2025/june/)
 - [EuroLLVM 2025](https://llvm.swoogo.com/2025eurollvm/home)

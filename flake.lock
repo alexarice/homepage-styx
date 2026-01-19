@@ -481,11 +481,11 @@
     },
     "nixpkgs_11": {
       "locked": {
-        "lastModified": 1764557259,
-        "narHash": "sha256-fhD/QUtJ0HKs3oLvfnD+/SrBV5Y7YEkCYnDjOVUjLys=",
+        "lastModified": 1768569498,
+        "narHash": "sha256-bB6Nt99Cj8Nu5nIUq0GLmpiErIT5KFshMQJGMZwgqUo=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "0d70460758949966e91d9ecb823b821f963cefbb",
+        "rev": "be5afa0fcb31f0a96bf9ecba05a516c66fcd8114",
         "type": "github"
       },
       "original": {
@@ -665,11 +665,11 @@
         "typix": "typix_3"
       },
       "locked": {
-        "lastModified": 1768516552,
-        "narHash": "sha256-vsZ0qFgYZFEXbhu/f3U/8RT2nVW+9AfFd0OwbsV+w4U=",
+        "lastModified": 1768646803,
+        "narHash": "sha256-CoBwAwZuJrUV8iYeF9SKb6znruDBA00J+Z5xur5+12s=",
         "ref": "refs/heads/main",
-        "rev": "cf3311ddb8eb3b13cf27e56661ffaa2f1956dd02",
-        "revCount": 6,
+        "rev": "8228ccda6f3887e618364781ab1f4bc7f9cb1adf",
+        "revCount": 7,
         "type": "git",
         "url": "ssh://git@github.com/alexarice/planqc-mutable"
       },
